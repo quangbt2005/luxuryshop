@@ -18,16 +18,7 @@
   <tr>
     <td>
       <div id="marquee_wrapper">
-            <marquee>{$_MARQUEE}</marquee>
-        </div>
-
-      <div class="navigation2_icon">
-            {if $smarty.session.logon.id != ''}
-        <a href="/dangxuat" class="headerNavigation2" style="background-image: url(/images/logoff_30x30.gif);">Thoát</a>&nbsp;&nbsp;
-        {/if}
-        <a href="/taikhoan" class="headerNavigation2" style="background-image: url(/images/header_account.gif);">Tài khoản</a>&nbsp;&nbsp;
-        <a href="/giohang/xem" class="headerNavigation2" style="background-image: url(/images/header_cart.gif);">Giỏ hàng</a> &nbsp;&nbsp;
-        <a href="/thanhtoan" class="headerNavigation2" style="background-image: url(/images/header_checkout.gif);">Thanh Toán</a>
+        <marquee>{$_MARQUEE}</marquee>
       </div>
     </td>
   </tr>

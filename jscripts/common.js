@@ -21,7 +21,8 @@ $(document).ready(function() {
     );
 
     $('#slides').cycle({
-        fx:     'scrollLeft,scrollDown,scrollRight,scrollUp,fade,zoom,blindX,blindY,blindZ,growX,growY,curtainX,curtainY',
+        // fx:     'scrollLeft,scrollDown,scrollRight,scrollUp,fade,zoom,blindX,blindY,blindZ,growX,growY,curtainX,curtainY',
+        fx:     'fade',
         speed:   800,
         timeout: 4000,
         next:   '#next',
