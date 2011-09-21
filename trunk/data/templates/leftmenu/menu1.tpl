@@ -39,47 +39,6 @@
 			</tr>
 		</table></td>
 	</tr>
-</table>
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-	<tr>
-		<td>
-			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="bsl_heading">
-				<tr>
-					<td class="bsl_left"><table width="100%" cellpadding="0" cellspacing="0" class="bsl_right">
-						<tr>
-							<td class="heading_text_2">
-								<font color="#010101">BÁN CHẠY NHẤT</font>
-							</td>
-						</tr>
-					</table></td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
-		<td><table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#e1e92c">
-			<tr>
-				<td class="tall-l3"><img src="/images/spacer.gif" width="20" height="1" alt=""></td>
-				<td width="100%" align="center" style="padding-bottom: 20px">
-					<div id="slides" class="pics" style="width: 130px;height:130px">
-						{foreach from=$best_seller item=best}
-						<a href="/sanpham/{$best.products_id}/chitiet" title="{$best.products_name}"><img src="/product_thumb.php?f={$best.products_image}&w=auto&h=80&cx=130&cy=130" alt="{$best.products_name}" hspace="0" border="0" width="130" height="130"></a>
-						{/foreach}
-					</div>
-				</td>
-				<td class="tall-r3"><img src="/images/spacer.gif" width="20" height="1" alt=""></td>
-			</tr>
-		</table></td>
-	</tr>
-	<tr>
-		<td><table width="100%" cellpadding="0" cellspacing="0" border="0">
-			<tr>
-				<td><img src="/images/k-bl3.gif" alt=""></td>
-				<td class="tall-b3" width="100%"><br style="line-height:10px"></td>
-				<td><img src="/images/k-br3.gif" alt=""></td>
-			</tr>
-		</table></td>
-	</tr>
 </table><br>
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 	<tr>

@@ -29,7 +29,7 @@
       <div id="allcenter">
         {$center_col}
       </div>
-      <div id="allright">{$right_col}</div>
+      <!-- <div id="allright">{$right_col}</div> -->
       <div id="allfooter">{$footer}</div>
     </div>
   </div><div class="clear"></div>

@@ -61,11 +61,10 @@ ul.categories li a:hover{color: red;}
   /*background:url("/images/top-m.gif") repeat-x scroll right top transparent;*/
 }
 #allleft{float: left;width: 200px;margin: 5 0 5 0;}
-#allcenter{float: left;width:550px;background-color: white;margin: 5 0 5 5;}
-#allright{float: left;width: 200px;margin: 5 0 5 5;}
+#allcenter{float: left;width:755px;background-color: black;margin: 5 0 5 5;}
 #allfooter{clear: both;width:960px;}
 
-#marquee_wrapper{position: relative;left: 0px;top: 10px;}
+#marquee_wrapper{position: relative;left: 0px;top: 3px;}
 .navigation2_icon
 {
   float: left;
@@ -122,7 +121,7 @@ div.saleoffimg{
 div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
 .product
 {
-  width: 181px;
+  width: 187px;
   height: 230px;
   background-color: white;
   float: left;

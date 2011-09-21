@@ -10,7 +10,7 @@ define( 'SUBDOMAIN', '' );
 // Just change SYS_ROOT when deploy
 // ---------------------------------------------------------------------------------------------- //
 //define( 'SYS_ROOT', '/home/thamtuth/public_html/kittyshop/' . SUBDOMAIN );
-define( 'SYS_ROOT', 'd:/www/kittyshop/' . SUBDOMAIN );
+define( 'SYS_ROOT', 'd:/www/luxuryshop/' . SUBDOMAIN );
 
 define( 'WEB_ROOT', '/' . SUBDOMAIN );
 
