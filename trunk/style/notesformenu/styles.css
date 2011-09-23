@@ -4,7 +4,7 @@
 }
 div.menuTree
 {
-    width: 180px;
+    width: 220px;
     /*border: solid 1px black;*/
 }
 div.menuTree UL
@@ -31,8 +31,8 @@ div.menuTree UL LI.parent A
 }
 div.menuTree UL LI.parent A:hover
 {
-    font-weight: bold;
-    font-size: 110%;
+    /*font-weight: bold;
+    font-size: 110%;*/
 }
 div.menuTree UL LI.child A
 {
@@ -42,8 +42,8 @@ div.menuTree UL LI.child A
 }
 div.menuTree UL LI.child A:hover
 {
-    font-weight: bold;
-    font-size: 110%;
+    /*font-weight: bold;
+    font-size: 110%;*/
 }
 div.menuTree UL LI.parent
 {
@@ -51,5 +51,5 @@ div.menuTree UL LI.parent
 }
 div.menuTree UL LI.expanded
 {
-    background: url(/images/expended_image.gif) left top no-repeat;
+    background: url(/images/m18.gif) left top no-repeat;
 }

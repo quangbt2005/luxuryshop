@@ -4,10 +4,10 @@
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td style="height: 280px;padding:4px;">
-            <div id="slides" class="pics" style="width: 280px;height:260px;padding:0;margin:0;background-color:white">
-			  <img src="/product_thumb.php?f=../slides/s_01.jpg&h=260&w=auto&ma=270&cx=280&cy=260&hal=0" border="0" />
-			  <img src="/product_thumb.php?f=../slides/s_02.jpg&h=260&w=auto&ma=270&cx=280&cy=260&hal=0" border="0" />
-			  <img src="/product_thumb.php?f=../slides/s_03.jpg&h=260&w=auto&ma=270&cx=280&cy=260&hal=0" border="0" />
+            <div id="slides" class="pics" style="width: 230px;height:260px;padding:0;margin:0;background-color:white">
+			  <img src="/product_thumb.php?f=../slides/s_01.jpg&h=260&w=auto&ma=270&cx=230&cy=260&hal=0" border="0" />
+			  <img src="/product_thumb.php?f=../slides/s_02.jpg&h=260&w=auto&ma=270&cx=230&cy=260&hal=0" border="0" />
+			  <img src="/product_thumb.php?f=../slides/s_03.jpg&h=260&w=auto&ma=270&cx=230&cy=260&hal=0" border="0" />
 		    </div>
 		  </td>
 		  <td><img src="/images/transparent.png" width="1" height="1"></td>

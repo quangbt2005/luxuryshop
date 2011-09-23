@@ -35,21 +35,39 @@ function BuildCategoryTree()
     }
   }
 // pd($Tree);
-  // reset($Tree);
-  // $pointer = $Tree;
-  // $stack   = array();
-  $html = "<div class=\"arrowsidemenu\">\n";
+  reset($Tree);
+  $pointer = $Tree;
+  $stack   = array();
+  $html = "<ul>\n";
 
-  foreach($Tree as $cat){
-    if(isset($cat['childs'])){
-      $html .= sprintf("<div class=\"menuheaders\"><a href=\"/sanpham/danhsach/%s\">%s</a></div>\n<ul class=\"menucontents\">\n", $cat['categories_id'], $cat['categories_name']);
-      $childs = $cat['childs'];
-      foreach($childs as $child_cat){
-      	$html .= sprintf("<li><a href=\"/sanpham/danhsach/%s\">%s</a></li>\n", $child_cat['categories_id'], $child_cat['categories_name']);
+  while(!empty($pointer)){
+  	if(is_array($pointer)){
+      $break = false;
+      do{
+        $cat = current($pointer);
+
+        if(!empty($cat)){
+          $html .= sprintf("<li class=\"%s\"><a href=\"/sanpham/danhsach/%s\">%s</a>%s\n", (isset($cat['childs']) ? 'parent' : 'child'), $cat['categories_id'], $cat['categories_name'], (isset($cat['childs']) ? '' : '</li>'));
+          if(isset($cat['childs'])){
+            if(next($pointer)) $stack[] = $pointer; else $stack[] = '</ul>';
+            $stack[] = $cat['childs'];
+            $html .= "<ul>\n";
+            $break = true;
+            break;
+          }
+        }
+      } while (next($pointer));
+      if(!(current($pointer)) && !$break) {
+      	if(count($stack) > 0){
+      		$html .= "</ul></li>\n";
+      	} else {
+      		$html .= "</ul>\n";
+      	}
       }
-      $html .= "</ul>";
+      $pointer = array_pop($stack);
     } else {
-    	$html .= sprintf("<div><a href=\"/sanpham/danhsach/%s\">%s</a></div>\n", $cat['categories_id'], $cat['categories_name']);
+      $html .= "</ul>\n";
+      $pointer = array_pop($stack);
     }
   }
 
