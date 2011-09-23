@@ -20,11 +20,9 @@
 			<tr>
 				<td class="tall-l2" valign="top"><img src="/images/k-tl2.gif" alt=""></td>
 				<td class="tall-t2" width="100%" align="left">
-					<ul class="ul_1">
-    					{foreach from=$Categories item=cat key=key}
-    					<li {if $key==0}class="bg_list_un"{else}class="bg_list"{/if}style="margin-left:{math equation="x * y" x=$cat.level y=30}{if $cat.level>0};list-style-type: square{/if};"><a href="/sanpham/danhsach/{$cat.categories_id}" style="{if $cat.level==0}background-image:url(/images/cat/{$cat.icon});{else}padding-left:0;{/if}{if $cat.categories_id==$current_cat}color: red;{/if}">{$cat.categories_name}</a></li>
-    					{/foreach}
-					</ul>
+					<div id="menu1" class="menuTree" style="text-align: left;overflow: hidden;float: left;">
+					{$Tree}
+        			</div>
 				</td>
 				<td class="tall-r2" valign="top"><img src="/images/k-tr2.gif" alt=""></td>
 			</tr>

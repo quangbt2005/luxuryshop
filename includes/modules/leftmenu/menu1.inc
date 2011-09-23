@@ -4,7 +4,7 @@
 /**************************************************************************************************/
 require_once( FUNCTIONS_PATH . "categories/categories_db.inc" );
 require_once( FUNCTIONS_PATH . "products/products_db.inc" );
-
+require_once( FUNCTIONS_PATH . "categories/build_tree_front.inc" );
 // ---------------------------------------------------------------------------------------------- //
 //
 // ---------------------------------------------------------------------------------------------- //
@@ -25,6 +25,7 @@ function ReverseDisplayLevel(&$cats, $maxlevel=0){
 //
 // ---------------------------------------------------------------------------------------------- //
 $current_cat_id = isset($Request["parameters"][':catid'])?$Request["parameters"][':catid']:'';
+/*
 if(empty($current_cat_id)){
   $product_id = isset($Request["parameters"][':productid'])?$Request["parameters"][':productid']:'';
   if(!empty($product_id)){
@@ -94,11 +95,15 @@ if(empty($Categories))
     $Categories[$i]['level'] = 0;
   }
 }
+*/
 
-$Best_Seller = LoadBestSellerProducts();
+$Tree = BuildCategoryTree();
+$smarty->assign('Tree', $Tree);
+
+// $Best_Seller = LoadBestSellerProducts();
 
 $smarty->assign( "current_cat", $current_cat_id );
 $smarty->assign( "Categories", $Categories );
-$smarty->assign( "best_seller", $Best_Seller );
+// $smarty->assign( "best_seller", $Best_Seller );
 $left_col = $smarty->fetch( "leftmenu/menu1.tpl" );
 ?>

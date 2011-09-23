@@ -9,12 +9,16 @@
   <link rel="StyleSheet" href="/style/common.css" type="text/css" />
   <link rel="StyleSheet" href="/style/startbox.css" type="text/css" />
   <link rel="stylesheet" href="/style/jquery-lightbox/jquery.lightbox-0.5.css" media="screen" />
-  <link rel="stylesheet" href="/style/jquery-cycle/css.css" type="text/css" >
-  <link rel="stylesheet" href="/style/jquery-autoscroller/css.css" type="text/css" >
+  <link rel="stylesheet" href="/style/jquery-cycle/css.css" type="text/css" />
+  <link rel="stylesheet" href="/style/jquery-autoscroller/css.css" type="text/css" />
+  <link rel="stylesheet" href="/style/jquery-treeview/ui.dynatree.css" type="text/css" />
+  <link rel="stylesheet" href="/style/notesformenu/styles.css" type="text/css" />
   <script type="text/javascript" src="/jscripts/jquery/jquery-1.4.2.js"></script>
+  <script type="text/javascript" src="/jscripts/jquery/ui.core.js"></script>
   <script type="text/javascript" src="/jscripts/jquery/jquery.lightbox-0.5.js"></script>
   <script type="text/javascript" src="/jscripts/jquery/jquery.cycle.all.min.js"></script>
   <script type="text/javascript" src="/jscripts/jquery/jquery.smoothDivScroll-1.0.js"></script>
+  <script type="text/javascript" src="/jscripts/jquery/JQuery.MenuTree.js"></script>
   <script type="text/javascript" src="/jscripts/common.js"></script>
   <link rel="shortcut icon" href="/favico.ico" type="image/x-icon" />
   <title>{$title}</title>
@@ -27,7 +31,7 @@
       <div id="body_top">
         <div id="body_left">
           <div id="body_right">
-            <div id="allcontent" style="width: 960px;background-color: white;">
+            <div id="allcontent">
               <div id="allheader">{$header}</div>
               <div id="allleft">{$left_col}</div>
               <div id="allcenter">{$center_col}</div>

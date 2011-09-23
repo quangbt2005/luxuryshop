@@ -5,21 +5,16 @@ function update_side_saleoff()
     setTimeout(update_side_saleoff, 3000);
   });
 }
+/*
 $(document).ready(function(){
   setTimeout(update_side_saleoff, 3000);
 });
 $(document).ready(function(){
   $('a.agallery').lightBox();
 });
+*/
+
 $(document).ready(function() {
-    $('#pause').click(function() { $('#slides').cycle('pause'); return false; });
-    $('#play').click(function() { $('#slides').cycle('resume'); return false; });
-
-    $('#slideshow').hover(
-        function() { $('#controls').fadeIn(); },
-        function() { $('#controls').fadeOut(); }
-    );
-
     $('#slides').cycle({
         // fx:     'scrollLeft,scrollDown,scrollRight,scrollUp,fade,zoom,blindX,blindY,blindZ,growX,growY,curtainX,curtainY',
         fx:     'fade',
@@ -28,6 +23,10 @@ $(document).ready(function() {
         next:   '#next',
         prev:   '#prev'
     });
+});
+
+$(document).ready(function(){
+  $('#menu1').menuTree({multiOpenedSubMenu: true});
 });
 $(document).ready(function() {
     $("#makeMeScrollable").smoothDivScroll({

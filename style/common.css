@@ -1,6 +1,6 @@
 body{font-family: Tahoma;}
 div{margin: 0px auto;text-align: center;padding: auto;background-color: transparent;}
-
+img{padding:0;margin:0}
 /*table {font:bold 11px/14px Tahoma;}*/
 a{text-decoration: none;}
 a:hover{color: #AABBDD;text-decoration: underline;}
@@ -54,14 +54,14 @@ ul.categories li a:hover{color: red;}
   background:url("/images/body_bottom.png") no-repeat scroll right bottom transparent;
   padding-bottom: 9px;
 }
-#allcontent{z-index: 10;}
+#allcontent{z-index: 10;background-color: black;width:960px}
 #allheader{
   clear: both;
   width: 960px;
   /*background:url("/images/top-m.gif") repeat-x scroll right top transparent;*/
 }
-#allleft{float: left;width: 200px;margin: 5 0 5 0;}
-#allcenter{float: left;width:755px;background-color: black;margin: 5 0 5 5;}
+#allleft{float: left;width: 243px;margin: 5 0 5 0;}
+#allcenter{float: left;width:712px;background-color: black;margin: 5 0 5 5;}
 #allfooter{clear: both;width:960px;}
 
 #marquee_wrapper{position: relative;left: 0px;top: 3px;}
@@ -88,7 +88,7 @@ a.headerNavigation2
 }
 
 div.headerNavigation {
-  background: url("/images/mid_nav_1x81.gif") repeat-x;
+  background: url("/images/headermenu_bkg.png") no-repeat;
   height: 43px;
   width: 100%;
   margin-top:-14px;
@@ -121,7 +121,7 @@ div.saleoffimg{
 div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
 .product
 {
-  width: 187px;
+  width: 176px;
   height: 230px;
   background-color: white;
   float: left;
@@ -173,7 +173,7 @@ a.news2{font:bold 15px/20px Arial;color:red;}
 .tbl_top_h_l{/*background:url("/images/top-l.jpg") no-repeat scroll left top transparent;*/}
 .tbl_top_h_r{
   height: 280px;
-  background:url("/images/BANNER_1.jpg") no-repeat scroll left center transparent;
+  background:url("/images/F3.png") no-repeat scroll left center transparent;
   vertical-align: bottom;
 }
 .href_h_1,
