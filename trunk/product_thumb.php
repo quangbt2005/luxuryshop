@@ -16,7 +16,6 @@ function setTransparency($new_image,$image_source)
 }
 
 $f  = $_GET['f'];
-
 $img_dir = SYS_PRODUCTS_IMAGES;
 if(!is_file($img_dir.$f)){
   $f = '../noimage.jpg';
@@ -66,12 +65,19 @@ $cy = empty($_GET['cy']) ? 0 : $_GET['cy'];
 
 if(!empty($cx) && !empty($cy))
 {
-    $sx = ($cx - $w)/2;
-    $sy = ($cy - $h)/2;
+	// $cc     = empty($_GET['cc']) ? 'white' : $_GET['cc'];
+	@$valign = !isset($_GET['val']) ? 1 : $_GET['val'];
+	@$halign = !isset($_GET['hal']) ? 1 : $_GET['hal'];
+
+    $sx     = $halign==1 ? (($cx - $w)/2) : 0;
+    $sy     = $valign==1 ? (($cy - $h)/2) : 0;
 
     $canvas = imagecreatetruecolor($cx,$cy);
     $white  = imagecolorallocate($canvas, 255, 255, 255);
-    imagefill($canvas, 0, 0, $white);
+    $black  = imagecolorallocate($canvas, 0, 0, 0);
+    imagefill($canvas, 0, 0, $black);
+    // imagefill($canvas, 0, 0, $white);
+    // imagecopy($canvas, $im, $sx, $sy, 0, 0, $w, $h);
     imagecopy($canvas, $im, $sx, $sy, 0, 0, $w, $h);
     $im = $canvas;
 }

@@ -1,5 +1,5 @@
   {if $total_products > 0}
-  <div class="wrapper" style="width: 547px; margin-left: 1px;">
+  <div class="wrapper" style="width: 713px; margin-left: 1px;">
   {TitleBox title=$cat_name}
     {foreach from=$Product_List item=product}
     <div class="product">
@@ -16,7 +16,7 @@
   </div>
   <div class="clear"></div>
   {$pager}<div class="clear"></div>
-  <div class="t-right" style="width: 547px;"><span class="f10">Hiển thị {$product_count} sản phẩm từ {$product_from} đến {$product_to} trong tổng số {$total_products} sản phẩm</span></div>
+  <div class="t-right" style="width: 713px;"><span class="f10">Hiển thị {$product_count} sản phẩm từ {$product_from} đến {$product_to} trong tổng số {$total_products} sản phẩm</span></div>
   {else}
   <h1>Không tìm thấy sản phẩm nào</h1>
   {/if}

@@ -1,4 +1,4 @@
-  <div class="wrapper" style="width: 753px; margin-left: 1px;"><!-- New product -->
+  <div class="wrapper" style="width: 710px; margin-left: 1px;"><!-- New product -->
     {TitleBox title="&nbsp;Sản phẩm mới"}
     {foreach from=$NewProducts item=newProduct}
     <div class="product">
