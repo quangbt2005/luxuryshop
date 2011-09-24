@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------------------------------- //
 // Find category which product is belong to
 // ---------------------------------------------------------------------------------------------- //
-function FindNewProducts($category=0, $offset=0, $limit=9)
+function FindNewProducts($category=0, $offset=0, $limit=10)
 {
   global $languages_id;
   if(Positive_Int_Check($category))

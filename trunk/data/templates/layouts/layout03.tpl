@@ -7,17 +7,18 @@
   <meta name="description" content="Chuyên kinh doanh các sản phẩm dành cho bà mẹ và trẻ em. Các sản phẩm chính gồm quần áo thời trang, vật dụng, trang sức, mỹ phẩm, sản phẩm dinh dưỡng, thực phẩm/dược phẩm chức năng, đồ chơi" />
   <h1 style="POSITION: absolute;LEFT: -999em;">Shop các sản phẩm cao cấp dành cho Mẹ và Bé</h1>
   <link rel="StyleSheet" href="/style/common.css" type="text/css" />
-  <link rel="StyleSheet" href="/style/startbox.css" type="text/css" />
-  <link rel="stylesheet" href="/style/jquery-lightbox/jquery.lightbox-0.5.css" media="screen" />
-  <link rel="stylesheet" href="/style/jquery-cycle/css.css" type="text/css" />
+  <!-- <link rel="StyleSheet" href="/style/startbox.css" type="text/css" /> -->
+  <!-- <link rel="stylesheet" href="/style/jquery-lightbox/jquery.lightbox-0.5.css" media="screen" /> -->
+  <!-- <link rel="stylesheet" href="/style/jquery-cycle/css.css" type="text/css" /> -->
   <link rel="stylesheet" href="/style/jquery-autoscroller/css.css" type="text/css" />
+  <link rel="stylesheet" href="/style/ddaccordion/styles.css" type="text/css" />
   <!-- <link rel="stylesheet" href="/style/jquery-treeview/ui.dynatree.css" type="text/css" /> -->
   <!-- <link rel="stylesheet" href="/style/notesformenu/styles.css" type="text/css" /> -->
   <link rel="stylesheet" href="/style/scrollmenu/styles.css" type="text/css" />
   <script type="text/javascript" src="/jscripts/jquery/jquery-1.4.2.js"></script>
   <!-- <script type="text/javascript" src="/jscripts/jquery/ui.core.js"></script> -->
   <!-- <script type="text/javascript" src="/jscripts/jquery/jquery.lightbox-0.5.js"></script> -->
-  <script type="text/javascript" src="/jscripts/jquery/jquery.cycle.all.min.js"></script>
+  <!-- <script type="text/javascript" src="/jscripts/jquery/jquery.cycle.all.min.js"></script> -->
   <script type="text/javascript" src="/jscripts/jquery/jquery.smoothDivScroll-1.0.js"></script>
   <!-- <script type="text/javascript" src="/jscripts/jquery/JQuery.MenuTree.js"></script> -->
   <script type="text/javascript" src="/jscripts/jquery/ddaccordion.js"></script>

@@ -72,7 +72,7 @@ define( 'URL_ORDER_COMPLETE', WEB_ROOT . 'cart/complete' );
 
 define( 'LANGUAGE_ID', 1 );
 define( 'LANGUAGE', 'vietnam' );
-define( 'SMALL_IMAGE_HEIGHT', 80 );
+define( 'SMALL_IMAGE_HEIGHT', 180 );
 define( 'HEADING_NEWS_IMAGE_WIDTH', '100' );
 define( 'HEADING_NEWS_IMAGE_HEIGHT', '100' );
 // ---------------------------------------------------------------------------------------------- //

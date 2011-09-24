@@ -1,24 +1,12 @@
-<br><div class="w100p" style="padding:2px 0;height: 73px;background: url(/images/Footer_bkg.png) no-repeat;">
-  <a href="http://enbac.com/" target="_blank"><img src="/images/enbac_logo.gif" border="0" height="61" width="220" vspace="4"></a>
-  <a href="http://5giay.vn/" target="_blank"><img src="/images/5giay_logo.jpg" border="0" height="61" width="220" vspace="4"></a>
-  <a href="http://chodientu.vn" target="_blank"><img src="/images/ebay_logo.jpg" border="0" height="61" width="220" vspace="4"></a>
-  <a href="http://www.123mua.com.vn/"><img src="/images/123mua_logo.jpg" border="0" height="61" width="220" vspace="4"></a>
-</div><div class="clear">
-<div class="w100p">
-  <table width="100%" cellpadding="0" cellspacing="3" border="0">
+<div id="footer">
+  <table width="940" cellspacing="0" cellpadding="0" border="0">
     <tr>
-      <td align="left" width="35%"><span class="f7 fb">Bản quyền © 2011 MEOKITTY.COM</span></td>
-      <td rowspan="2" align="center">
-        <img src="/images/icons/facebook_48.png" width="28">
-        <img src="/images/icons/flckr.png" width="28">
-        <img src="/images/icons/twitter_48.png" width="28">
-        <img src="/images/icons/technorati_48.png" width="28">
-      </td>
-      <td valign="top" align="right" width="22%"><span class="f7 fb">Điện Thoại: {$PHONE_1}</span></td>
+      <td align="left"><a href="/">Trang Chủ</a>&nbsp;|&nbsp;<a href="/">Dịch Vụ</a>&nbsp;|&nbsp;<a href="/">Liên Hệ</a>&nbsp;|&nbsp;<a href="/">Privacy Note</a></td>
+      <td align="right">Address</td>
     </tr>
     <tr>
-      <td valign="top" align="left" nowrap><span class="f7 fb">{$STORE_ADDRESS}</span></td>
-      <td valign="top" align="right"><span class="f7 fb">Email: {$STORE_EMAIL}</span></td>
+      <td align="left"><span class="copyright">Copyright © 2011 osCommerce <font color="#A7D8FF"><strong><u>Powered by osCommerce</u></strong></font></span></td>
+      <td align="right">Phone: </td>
     </tr>
   </table>
-</div>
+</div><div class="clear">

@@ -5,8 +5,8 @@ img{padding:0;margin:0}
 a{text-decoration: none;}
 a:hover{color: #AABBDD;text-decoration: underline;}
 
-ul.categories{margin: 0;padding: 0 0 0 8;list-style-type: none;}
-ul.categories li{padding: 10 0 10 0;}
+ul.categories{margin: 0;padding: 0 0 0 8px;list-style-type: none;}
+ul.categories li{padding: 10px 0;}
 ul.categories li a
 {
   background-position:left center;
@@ -54,16 +54,26 @@ ul.categories li a:hover{color: red;}
   background:url("/images/body_bottom.png") no-repeat scroll right bottom transparent;
   padding-bottom: 9px;
 }
-#allcontent{z-index: 10;background-color: black;width:960px}
+#allcontent{z-index: 10;background-color: #000000;width:960px}
 #allheader{
   clear: both;
   width: 960px;
   /*background:url("/images/top-m.gif") repeat-x scroll right top transparent;*/
 }
-#allleft{float: left;width: 243px;margin: 5 0 5 0;background-color: #2a3e4f;}
-#allcenter{float: left;width:712px;background-color: black;margin: 5 0 5 5;}
+#allleft{float: left;width: 241px;margin: 5px 1px 5px 0;background-color: #2a3e4f;height:1292px;}
+#allcenter{float: left;width:717px;background-color: black;margin: 5px 0 5px 1px;}
 #allfooter{clear: both;width:960px;}
-
+#footer, #footer td a, #footer td, .copyright{
+  font: normal 13px/20px Tahoma;
+  color: #ffffff;
+}
+#footer{
+  width: 100%;
+  background: url(/images/Footer_bkg.png) no-repeat;
+  height: 70px;
+  padding: 14px 0 0 10px;
+  text-align: left;
+}
 #marquee_wrapper{position: relative;left: 0px;top: 3px;}
 .navigation2_icon
 {
@@ -84,7 +94,7 @@ a.headerNavigation2
   font-weight: bold;
   font-size: 8pt;
   background-repeat: no-repeat;
-  padding: 10 0 12 35;
+  padding: 10px 0 12px 35px;
 }
 
 div.headerNavigation {
@@ -95,9 +105,9 @@ div.headerNavigation {
   text-align: left;
   font:bold 13px Arial;
 }
-ul.headerNavigation{padding:13 0 10 0;margin-left:0;}
+ul.headerNavigation{padding:13px 0 10px 0;margin-left:0;}
 ul.headerNavigation li{display: inline;}
-ul.headerNavigation li a{padding: 10 20;text-decoration: none;color: white;}
+ul.headerNavigation li a{padding: 10px 20px;text-decoration: none;color: white;}
 ul.headerNavigation li a:hover{color: yellow;text-decoration: none;}
 
 div.fix_height_container
@@ -121,31 +131,35 @@ div.saleoffimg{
 div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
 .product
 {
-  width: 176px;
-  height: 230px;
-  background-color: white;
+  width: 356px;
+  height: 250px;
+  background-color: #000000;
   float: left;
-  margin: 1 0 0 1;
+  margin: 1px 0 0 1px;
   font:bold 11px/28px Tahoma;
 }
-
+div.titleheader{width: 100%;padding: 10px 5px;margin: 0;background-color: #2a3e4f;}
 .product a{ text-decoration:none; color:#C11502; }
 
-.wrapper{float: left;background-color: #e9ee88;padding: 0 0 1 0;}
+.wrapper{float: left;background-color: #456581;padding: 0 0 1px 0;}
 div.clear{clear: both;}
 div.seperator{clear: both;width:1px;height:10px;}
 td.title-center
 {
-  background: url("/images/title_red_mid_1x36.gif") repeat-x scroll left top transparent;
+  /*background: url("/images/title_red_mid_1x36.gif") repeat-x scroll left top transparent;*/
   height: 36px;
   font:bold 12px Arial;
-  color: #333399;
+  color: #A7D8FF;
   text-transform: uppercase;
+  background-color: #2a3e4f;
+  border-top: 1px solid #456581;
+  border-left: 1px solid #456581;
+  border-right: 1px solid #456581;
 }
 
-td.title-corner-left,td.title-corner-right{height: 36px; width: 10px;}
-td.title-corner-left{background: url("/images/title_red_left_5x36.gif") no-repeat scroll left top transparent;}
-td.title-corner-right{background: url("/images/title_red_right_5x36.gif") no-repeat scroll left top transparent;}
+td.title-corner-left,td.title-corner-right{height: 36px; width: 10px;background-color: #2a3e4f;}
+/*td.title-corner-left{background: url("/images/title_red_left_5x36.gif") no-repeat scroll left top transparent;}
+td.title-corner-right{background: url("/images/title_red_right_5x36.gif") no-repeat scroll left top transparent;}*/
 
 a.side-cart{color: black; text-decoration: none}
 a.side-cart:hover,a.account_man:hover{text-decoration: underline;color:#AABBDD;}
@@ -173,7 +187,7 @@ a.news2{font:bold 15px/20px Arial;color:red;}
 .tbl_top_h_l{/*background:url("/images/top-l.jpg") no-repeat scroll left top transparent;*/}
 .tbl_top_h_r{
   height: 280px;
-  background:url("/images/F3.png") no-repeat scroll left center transparent;
+  background:url("/images/F4.jpg") no-repeat scroll left center transparent;
   vertical-align: bottom;
 }
 .href_h_1,
@@ -258,7 +272,7 @@ td {
     margin: 0;
     padding: 0;
 }
-.ul_1 li{padding: 10 0 10 0;}
+.ul_1 li{padding: 10px 0;}
 .ul_1 li a
 {
   background-position:left center;
@@ -287,23 +301,23 @@ table.list th{background-color: #B6B7CB;
   color: #20619E;
   font:bold 10px/14px Tahoma;
   text-align: center;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
   height: 32px;
 }
 
 table.list td
 {
   background-color: #EFF7FF;
-  padding: 8px 5px 8px 5px;
+  padding: 8px 5px;
   font:bold 12px/14px Tahoma;
 }
 tr.newsContent td
 {
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   font-family: Arial,sans-serif;
   text-decoration: none;
   color: #000000;
-  padding: 5 2 3 2;
+  padding: 5px 2px 3px 2px;
   background-repeat: no-repeat;
   background-position: center left;
   font-size: 20pt;
@@ -323,8 +337,8 @@ table.register
 table.register th{padding: 5px;text-align: right;font-weight: bold;}
 table.register td{padding: 5px;text-align: left;}
 
-.error_field{ font-family: Arial, sans-serif; font-size: 11px; background-color: #ffb3b5; padding: 5 0 5 0;}
-.success_field{ font-family: Arial, sans-serif; font-size: 11px; background-color: #99FF00; padding: 5 0 5 0;}
+.error_field{ font-family: Arial, sans-serif; font-size: 11px; background-color: #ffb3b5; padding: 5px 0;}
+.success_field{ font-family: Arial, sans-serif; font-size: 11px; background-color: #99FF00; padding: 5px 0;}
 .inputRequirement{font:normal 10px/20px Arial; padding: 3px; color: red;}
 .orderEdit { font-family : Arial, sans-serif; font-size : 10px; color: #70d250; text-decoration: underline; }
 .bigtitle{font-family: Arial, sans-serif;font-size: 20px;font-weight: bold;color: #333399;}

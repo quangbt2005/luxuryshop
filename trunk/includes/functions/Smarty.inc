@@ -67,9 +67,8 @@ function smarty_title_box($params)
   if(!empty($params['href'])) $innerHtml .= '</a>';
 
   $result = '<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>' .
-            '<td class="title-corner-left">&nbsp;</td>' .
-            '<td class="title-center">' . $innerHtml . '</td>' .
-            '<td class="title-corner-right">&nbsp;</td></tr></table>';
+            '<td class="title-center">' . $innerHtml . '</td></tr></table>';
+    // $result = '<div class="titleheader">' . $innerHtml . '</div>';
   return $result;
 }
 // ---------------------------------------------------------------------------------------------- //
