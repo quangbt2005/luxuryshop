@@ -1,4 +1,4 @@
-body{font-family: Tahoma;}
+body{font-family: Tahoma;background-color: #161f29}
 div{margin: 0px auto;text-align: center;padding: auto;background-color: transparent;}
 img{padding:0;margin:0}
 /*table {font:bold 11px/14px Tahoma;}*/
@@ -23,18 +23,18 @@ ul.categories li a:hover{color: red;}
   /*background:url("/images/theme_body.png") repeat-x scroll right top #9de7f1;*/
 }
 #theme_right{
-  width: 1200px;
-  background: url("/images/theme_right.gif") no-repeat scroll right top transparent;
+  /*width: 1200px;
+  background: url("/images/theme_right.gif") no-repeat scroll right top transparent;*/
 }
 #theme_background{
-  width: 1200px;
+  /*width: 1200px;
   background:url("/images/theme_body.png") repeat-x scroll left top #9de7f1;
-  padding-top: 10px;
+  padding-top: 10px;*/
 }
 #themebottom{
-  width: 1200px;
+  /*width: 1200px;
   height: 246px;
-  background:url("/images/kittytheme.jpg") no-repeat scroll right top transparent;
+  background:url("/images/kittytheme.jpg") no-repeat scroll right top transparent;*/
 }
 #body_top{
   width: 978px;
