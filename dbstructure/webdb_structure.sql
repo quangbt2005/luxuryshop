@@ -8,7 +8,7 @@ MySQL - 5.5.8-log : Database - luxuryshop
 
 /*!40101 SET SQL_MODE=''*/;
 
-create database if not exists `luxuryshop`;
+create database if not exists `quangbt200_luxury`;
 
 USE `luxuryshop`;
 
