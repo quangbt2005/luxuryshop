@@ -10,7 +10,7 @@ MySQL - 5.5.8-log : Database - luxuryshop
 
 create database if not exists `quangbt200_luxury`;
 
-USE `luxuryshop`;
+USE `quangbt200_luxury`;
 
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
