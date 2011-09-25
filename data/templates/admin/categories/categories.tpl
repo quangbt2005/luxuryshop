@@ -123,9 +123,9 @@ function openAddProductPopup(){
   if(dtnode_id > 0){
     url = url + dtnode_id;
     var topPos = (getHeight()-popupHeight)/2;
-	var leftPos = (getWidth()-popupWidth)/2;
+  var leftPos = (getWidth()-popupWidth)/2;
 
-    var popup = window.open(url, 'Them_san_pham_moi',"resizable=no,menubar=no,toolbar=no,location=no,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
+    var popup = window.open(url, 'Them_san_pham_moi',"resizable=no,menubar=no,toolbar=no,location=no,scrollbars=yes,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
   } else {
     alert('Chưa chọn Danh mục hoặc Danh mục này không thể chứa sản phẩm');
   }
@@ -193,7 +193,7 @@ function openEditCategoryPopup(){
     url = url + dtnode_id;
 
     var topPos = (getHeight()-popupHeight)/2;
-	var leftPos = (getWidth()-popupWidth)/2;
+  var leftPos = (getWidth()-popupWidth)/2;
 
     var popup = window.open(url, 'Sua_danh_muc',"resizable=no,menubar=no,toolbar=no,location=no,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
   } else {
@@ -206,13 +206,13 @@ function openEditProductPopup(product_id){
   var topPos = (getHeight()-popupHeight)/2;
   var leftPos = (getWidth()-popupWidth)/2;
 
-  var popup = window.open(url, 'Hieu_chinh_thong_tin_san_pham',"resizable=no,menubar=no,toolbar=no,location=no,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
+  var popup = window.open(url, 'Hieu_chinh_thong_tin_san_pham',"resizable=no,menubar=no,toolbar=no,location=no,scrollbars=yes,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
 }
 function openSaleoffSettingPopup(product_id){
   var url = '/admin/products/saleoff/' + product_id;
 
   var topPos = (getHeight()-popupHeight)/2;
-	var leftPos = (getWidth()-popupWidth)/2;
+  var leftPos = (getWidth()-popupWidth)/2;
 
   var popup = window.open(url, 'Khuyen_mai_san_pham',"resizable=no,menubar=no,toolbar=no,location=no,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
 }

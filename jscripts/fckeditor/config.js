@@ -30,7 +30,7 @@ CKEDITOR.editorConfig = function( config )
 
   config.toolbar_Enough4Me =
   [
-    { name: 'row1', items : [ 'Cut','Copy','Paste','-','Undo','Redo','-','Bold','Italic','Underline','Strike','Subscript','Superscript','-','NumberedList','BulletedList','-','Outdent','Indent','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock' ] },
+    { name: 'row1', items : [ 'mytable','Cut','Copy','Paste','-','Undo','Redo','-','Bold','Italic','Underline','Strike','Subscript','Superscript','-','NumberedList','BulletedList','-','Outdent','Indent','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock' ] },
     '/',
     { name: 'row2', items : [ 'Font','FontSize','Link','Unlink','-','Image','Table','Smiley','SpecialChar','TextColor','BGColor','-','Maximize','Source' ] },
   ];
@@ -52,4 +52,5 @@ CKEDITOR.editorConfig = function( config )
   config.removePlugins = 'resize';
   config.width = 580;
   config.autoParagraph = false;
+  config.extraPlugins = 'mytable';
 };

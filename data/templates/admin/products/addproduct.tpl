@@ -6,6 +6,11 @@ $(document).ready(function() {
       uiColor : '#9AB8F3',
       width: 650
     } );
+  CKEDITOR.replace( 'txtProductIntro',
+    {
+      uiColor : '#9AB8F3',
+      width: 650
+    } );
 });
 </script>
 <script src="/jscripts/fileuploader.js" type="text/javascript"></script>
@@ -49,6 +54,10 @@ $(document).ready(function() {
               </tr>
             </table>
           </td>
+        </tr>
+        <tr>
+          <th align="right" style="padding-right: 5px" width="120">Thông tin sản phẩm</th>
+          <td align="left" style="padding: 5px"><textarea name="txtProductIntro" id="txtProductIntro">{$smarty.post.txtProductIntro}</textarea></td>
         </tr>
         <tr>
           <th align="right" style="padding-right: 5px" width="120">Chi Tiết Sản Phẩm</th>

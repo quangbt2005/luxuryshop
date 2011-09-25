@@ -18,6 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   $product_category    = $_POST['drpProductCategory'];
   $product_price       = $_POST['txtProductPrice'];
   $product_name        = $_POST['txtProductName'];
+  $product_intro       = $_POST['txtProductIntro'];
   $product_description = $_POST['txtProductDescription'];
   // $product_quantity = $_POST['txtProductQuantity'];
   $product_image       = $_POST['txtProductImage'];
@@ -26,8 +27,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
   if(empty($product_name)) $errors[] = 'Vui lòng nhập tên sản phẩm';
   if(empty($product_price)) $errors[] = 'Vui lòng nhập giá sản phẩm';
-  else if(!Positive_Int_Check($product_price))
-    $errors[] = 'Giá sản phẩm không hợp lệ';
   if(!empty($product_quantity) && !Positive_Int_Check($product_quantity))
     $errors[] = 'Số lượng sản phẩm không hợp lệ';
 
@@ -43,6 +42,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         'products_id'          => $product_id,
         'language_id'          => '1',
         'products_name'        => $product_name,
+        'products_intro'       => $product_intro,
         'products_description' => $product_description,
       ));
       DB_Insert('products_to_categories',array(
