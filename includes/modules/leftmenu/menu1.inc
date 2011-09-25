@@ -25,13 +25,14 @@ function ReverseDisplayLevel(&$cats, $maxlevel=0){
 //
 // ---------------------------------------------------------------------------------------------- //
 $current_cat_id = isset($Request["parameters"][':catid'])?$Request["parameters"][':catid']:'';
-/*
+
 if(empty($current_cat_id)){
   $product_id = isset($Request["parameters"][':productid'])?$Request["parameters"][':productid']:'';
   if(!empty($product_id)){
     $current_cat_id = Find_CategoryID_Of_Product($product_id);
   }
 }
+/*
 $current_cat    = NULL;
 
 if(Positive_Int_Check($current_cat_id))

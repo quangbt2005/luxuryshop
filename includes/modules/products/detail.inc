@@ -12,10 +12,10 @@ $product = LoadProduct($product_id);
 // ---------------------------------------------------------------------------------------------- //
 // $current_cat_id has been loaded in leftmenu script ( leftmenu/menu1.inc )
 // ---------------------------------------------------------------------------------------------- //
-// $current_cat_id = Find_CategoryID_Of_Product($product_id);
+// pd($query); = Find_CategoryID_Of_Product($product_id);
 
 $OtherProductsList = FindNewProducts($current_cat_id, 0, 1000);
-// pd($OtherProductsList);
+//pd($OtherProductsList);
 $smarty->assign( "product", $product );
 $smarty->assign( "OtherProductsList", $OtherProductsList );
 $center_col = $smarty->fetch( "products/detail.tpl" );

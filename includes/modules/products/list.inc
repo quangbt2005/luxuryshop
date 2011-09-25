@@ -18,6 +18,7 @@ $current_page  = Validatize_Current_Page( $current_page, $total_pages );
 
 $offset        = ($current_page - 1) * $limit;
 $List          = List_Product_By_Category( $cat_id, $offset, $limit );
+
 // ---------------------------------------------------------------------------------------------- //
 // Paging
 // ---------------------------------------------------------------------------------------------- //
@@ -31,9 +32,11 @@ $pager = Paginate( $Paging_info );
 $list_pad = 0;
 $product_count = count($List);
 
-if($product_count <= 3) $list_pad = 3;
+if($product_count <= 2) $list_pad = 2;
+elseif($product_count <= 4) $list_pad = 4;
 elseif($product_count <= 6) $list_pad = 6;
-elseif($product_count <= 9) $list_pad = 9;
+elseif($product_count <= 8) $list_pad = 8;
+elseif($product_count <= 10) $list_pad = 10;
 elseif($product_count <= 12) $list_pad = 12;
 $List = array_pad($List, $list_pad, array('empty'=>'true'));
 

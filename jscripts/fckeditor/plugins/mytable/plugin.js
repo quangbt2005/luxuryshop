@@ -12,7 +12,7 @@
     init:function(editor){
       editor.addCommand(b,a);
       editor.ui.addButton("mytable",{
-        label:'Add Tag',
+        label:'Thêm bảng thông tin tóm tắt của sản phẩm',
         icon:this.path+"addTag.gif",
         command:b
       });

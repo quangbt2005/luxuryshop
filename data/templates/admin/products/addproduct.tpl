@@ -4,12 +4,14 @@ $(document).ready(function() {
   CKEDITOR.replace( 'txtProductDescription',
     {
       uiColor : '#9AB8F3',
-      width: 650
+      width: 650,
+      toolbar: 'Enough4Me2',
     } );
   CKEDITOR.replace( 'txtProductIntro',
     {
       uiColor : '#9AB8F3',
-      width: 650
+      width: 650,
+      toolbar: 'Enough4Me',
     } );
 });
 </script>
