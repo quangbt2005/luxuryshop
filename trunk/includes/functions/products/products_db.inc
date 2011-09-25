@@ -12,7 +12,7 @@ function FindNewProducts($category=0, $offset=0, $limit=10)
   {
     if((int)$category == 0)
     {
-      $query = 'SELECT p.products_id,p.products_image,pd.products_name,'
+      $query = 'SELECT p.products_id,pd.products_intro,p.products_image,pd.products_name,'
                . 's.specials_new_products_price special_price,p.products_price '
                . 'FROM ' . TBL_PRODUCTS . ' p LEFT JOIN ' . TBL_SALEOFF
                . ' s ON (p.products_id=s.products_id), '
@@ -22,7 +22,7 @@ function FindNewProducts($category=0, $offset=0, $limit=10)
     }
     else
     {
-      $query = 'SELECT DISTINCT p.products_id,p.products_image,pd.products_name,'
+      $query = 'SELECT DISTINCT p.products_id,pd.products_intro,p.products_image,pd.products_name,'
                . 's.specials_new_products_price special_price,p.products_price '
                . 'FROM ' . TBL_PRODUCTS . ' p LEFT JOIN ' . TBL_SALEOFF
                . ' s ON (p.products_id=s.products_id), '
@@ -62,7 +62,7 @@ function FindProductsInSpecialCat($limit=8)
       $prod_id_query_result = P_MySQL_Real_SELECT($query);
       $prod_id = $prod_id_query_result[0];
 
-      $query  = 'SELECT p2c.categories_id, p2c.products_id, p.products_image,';
+      $query  = 'SELECT p2c.categories_id,pd.products_intro, p2c.products_id, p.products_image,';
       $query .= 'IF(s.specials_new_products_price,s.specials_new_products_price,p.products_price)';
       $query .= ' AS products_price,des.products_name';
       $query .= ' FROM ' . TBL_PRO2CAT . ' p2c INNER JOIN ' . TBL_PRODUCTS;
@@ -205,7 +205,7 @@ function List_Product_By_Category( $category_id, $offset=0,
 
   $categories_string = implode(',', $categories);
 
-  $query = 'SELECT DISTINCT p.products_id,p.products_image,pd.products_name,'
+  $query = 'SELECT DISTINCT p.products_id,pd.products_intro,p.products_image,pd.products_name,'
                . 's.specials_new_products_price special_price,p.products_price '
                . 'FROM ' . TBL_PRODUCTS . ' p LEFT JOIN ' . TBL_SALEOFF
                . ' s ON (p.products_id=s.products_id AND s.status=1), '
@@ -226,7 +226,7 @@ function LoadProduct( $product_id )
   }
 
   $product_id = P_SQL_Quote_NumberOnly( $product_id );
-  $query = 'SELECT DISTINCT p.products_id,p.products_image,pd.products_name,p2c.categories_id,'
+  $query = 'SELECT DISTINCT p.products_id,pd.products_intro,p.products_image,pd.products_name,p2c.categories_id,'
            . 's.specials_new_products_price special_price,p.products_price,pd.products_description,'
            . 'p.products_quantity,p.products_ordered FROM ' . TBL_PRODUCTS . ' p LEFT JOIN ' . TBL_SALEOFF
            . ' s ON (p.products_id=s.products_id AND s.status=1) LEFT JOIN ' . TBL_PRO_DES . ' pd ON ('
@@ -256,7 +256,7 @@ function LoadProducts( $product_id_array )
   }
   $id_string = implode(',', $product_id_array);
 
-  $query = 'SELECT DISTINCT p.products_id,p.products_image,pd.products_name,'
+  $query = 'SELECT DISTINCT p.products_id,pd.products_intro,p.products_image,pd.products_name,'
            . 's.specials_new_products_price special_price,p.products_price,p.products_ordered '
            . 'FROM ' . TBL_PRODUCTS . ' p LEFT JOIN ' . TBL_SALEOFF
            . ' s ON (p.products_id=s.products_id), '
@@ -283,7 +283,7 @@ function LoadRandom1SaleOffProducts()
   $saleoff_count = P_MySQL_Real_SELECT( $query ) ;
   $saleoff_count = $saleoff_count[0];
 
-  $query = 'SELECT DISTINCT p.products_id,p.products_image,pd.products_name,'
+  $query = 'SELECT DISTINCT p.products_id,pd.products_intro,p.products_image,pd.products_name,'
            . 's.specials_new_products_price special_price,p.products_price '
            . 'FROM ' . TBL_PRODUCTS . ' p INNER JOIN ' . TBL_SALEOFF
            . ' s ON (p.products_id=s.products_id), '
@@ -313,7 +313,7 @@ function CountSaleOffProducts()
 // ---------------------------------------------------------------------------------------------- //
 function LoadSaleOffProducts( $offset=0, $limit=DEFAULT_PAGER_LIMIT )
 {
-  $query = 'SELECT DISTINCT p.products_id,p.products_image,pd.products_name,'
+  $query = 'SELECT DISTINCT p.products_id,pd.products_intro,p.products_image,pd.products_name,'
            . 's.specials_new_products_price special_price,p.products_price '
            . 'FROM ' . TBL_PRODUCTS . ' p INNER JOIN ' . TBL_SALEOFF
            . ' s ON (p.products_id=s.products_id), '

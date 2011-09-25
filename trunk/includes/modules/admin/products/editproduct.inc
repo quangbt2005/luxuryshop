@@ -21,6 +21,7 @@ if(!empty($product)){
     $product_category    = $_POST['drpProductCategory'];
     $product_price       = $_POST['txtProductPrice'];
     $product_name        = $_POST['txtProductName'];
+    $product_intro       = $_POST['txtProductIntro'];
     $product_description = $_POST['txtProductDescription'];
     //$product_quantity    = $_POST['txtProductQuantity'];
     $product_image       = $_POST['txtProductImage'];
@@ -32,8 +33,7 @@ if(!empty($product)){
 
     if(empty($product_name)) $errors[] = 'Vui lòng nhập tên sản phẩm';
     if(empty($product_price)) $errors[] = 'Vui lòng nhập giá sản phẩm';
-    else if(!Positive_Int_Check($product_price))
-      $errors[] = 'Giá sản phẩm không hợp lệ';
+
     if(!empty($product_quantity) && !Positive_Int_Check($product_quantity))
       $errors[] = 'Số lượng sản phẩm không hợp lệ';
     if(!empty($product_sold) && !Positive_Int_Check($product_sold))
@@ -56,6 +56,7 @@ if(!empty($product)){
 
       DB_Update('products_description', array('products_id' => $product_id), array(
         'products_name'        => $product_name,
+        'products_intro'       => $product_intro,
         'products_description' => $product_description,
       ));
       DB_Update('products_to_categories', array('products_id' => $product_id), array(
@@ -74,6 +75,7 @@ if(!empty($product)){
     } else {
       $product_price       = $product['products_price'];
       $product_name        = $product['products_name'];
+      $product_intro       = $product['products_intro'];
       $product_description = $product['products_description'];
       // $product_quantity    = $product['txtProductQuantity'];
       $product_image       = $product['products_image'];
@@ -84,7 +86,8 @@ if(!empty($product)){
   $html_select_categories = create_html_select_categories($product['categories_id']);
 
   $smarty->assign('txtProductName', $product_name);
-  $smarty->assign('txtProductPrice', (int)$product_price);
+  $smarty->assign('txtProductPrice', $product_price);
+  $smarty->assign('txtProductIntro', $product_intro);
   $smarty->assign('txtProductDescription', $product_description);
   // $smarty->assign('txtProductQuantity', $product_quantity);
   $smarty->assign('txtProductSPPrice', $product['special_price']);

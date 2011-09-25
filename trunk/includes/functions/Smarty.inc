@@ -25,7 +25,8 @@ $smarty->register_function('TitleBox',      'smarty_title_box');
 // ---------------------------------------------------------------------------------------------- //
 function smarty_number_format( $param )
 {
-  return number_format( $param["number"], 0, '.', ',' );
+  // return number_format( $param["number"], 0, '.', ',' );
+  return $param["number"];
 }
 // ---------------------------------------------------------------------------------------------- //
 //
