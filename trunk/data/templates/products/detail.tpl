@@ -1,13 +1,22 @@
 {if $product.products_id != ''}
-<table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr><td colspan="2"><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td class="t-left v-bottom"><span class="f14">{$product.products_name}</span></td>
-    <td class="t-right v-bottom">{if $product.special_price != ''}<s class="f14">{number_format number=$product.products_price}</s>&nbsp;<span class="fore-red f14">{number_format number=$product.special_price}&nbsp;VND</span>{else}<span class="f14 fore-red">{number_format number=$product.products_price}&nbsp;VND</span>{/if}</td>
-  </tr></table></td></tr>
-  <tr>
-    <td class="v-top" style="padding-top: 20px;" width="80%">{$product.products_description}&nbsp;</td>
-    <td class="v-top t-center" style="padding-top: 20px;">{ImageThumb src=$product.products_image width=auto height=$SMALL_IMAGE_HEIGHT ma=145 alt=$product.products_name options="float: left"}<br /><br /><a href="/sanpham/{$product.products_id}/order">{ImageButton image="button_buy_now.png" alt="Đặt hàng"}</a><br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="f10" style="text-decoration: underline;" href="javascript:history.back();">Trở lại</a></td>
-  </tr>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid #a8dcdf">
+    <tr>
+      <td style="padding: 10px 0 10px 10px;width:120px">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr><td align="left"><img src="/product_thumb.php?f={$product.products_image}&w=auto&h=180&ma=120&cx=120&cy=180" width="120" border="0" vspace="0" hspace="0" style="padding:0;margin:0;float:left;" alt="{$product.products_name}"></td></tr>
+        </table>
+      </td>
+      <td valign="top" style="padding: 0;width: 450px;" align="left">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" align="left">
+          <tr><td style="padding-top: 5px;height:38px;color:red" valign="top" align="left"><strong>{$product.products_name}</strong></td></tr>
+          <tr><td style="padding: 5px 3px 5px 5px;height:130px;" valign="top" align="left">{$product.products_intro}</td></tr>
+          <tr><td style="padding: 5px 3px 5px 5px;color: #00ff00;" valign="top" align="left"><strong>{number_format number=$product.products_price}</strong></td></tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding: 15px;" align="left"><div style="padding: 20px;border: 1px solid #cccccc;background-color: #456581;text-align: left">{$product.products_description}</div></td>
+    </tr>
 </table>
 {else}
 <p class="f20 fb">Không tìm thấy sản phẩm !</p>

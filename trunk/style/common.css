@@ -293,6 +293,8 @@ li.bg_list{
 /* TABLE PAGER
 /* --------------------------------------------------------------------------------------------- */
 table .pager{}
+.pager td a,.pager td a:visited{color: #a8dcdf;}
+.pager td {color: #ffffff;}
 /* --------------------------------------------------------------------------------------------- */
 /* TABLE LIST
 /* --------------------------------------------------------------------------------------------- */
@@ -494,7 +496,20 @@ table.product_intro{}
 .product_intro td,.product_intro th{
   color: #a8dcdf;
   font: normal 11px/18px Arial;
+  vertical-align: top;
 }
 .product_intro th{
   font-weight: bold;
 }
+/* --------------------------------------------------------------------------------------------- */
+table.product_description{}
+.product_description td,.product_description th{
+  color: #ffffff;
+  font: normal 14px/28px Arial;
+  vertical-align: top;
+  height: 30px;
+}
+.product_description th{
+  font-weight: bold;
+}
+/* --------------------------------------------------------------------------------------------- */

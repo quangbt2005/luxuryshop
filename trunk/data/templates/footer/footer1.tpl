@@ -5,7 +5,7 @@
       <td align="right">Address</td>
     </tr>
     <tr>
-      <td align="left"><span class="copyright">Copyright © 2011 osCommerce <font color="#A7D8FF"><strong><u>Powered by osCommerce</u></strong></font></span></td>
+      <td align="left"><span class="copyright">Copyright © 2011 VNBROTHER.NET <font color="#A7D8FF"><strong><u>Powered by VNBROTHER.NET</u></strong></font></span></td>
       <td align="right">Phone: </td>
     </tr>
   </table>
