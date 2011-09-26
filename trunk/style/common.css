@@ -136,10 +136,10 @@ div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
   background-color: #000000;
   float: left;
   margin: 1px 0 0 1px;
-  font:bold 11px/28px Tahoma;
+  /*font:bold 11px/28px Tahoma;*/
 }
 div.titleheader{width: 100%;padding: 10px 5px;margin: 0;background-color: #2a3e4f;}
-.product a{ text-decoration:none; color:#C11502; }
+.product a{ text-decoration:none; color:#ff0000; }
 
 .wrapper{float: left;background-color: #456581;padding: 0 0 1px 0;}
 div.clear{clear: both;}
