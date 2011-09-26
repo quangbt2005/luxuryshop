@@ -3,8 +3,6 @@
     <th width="40%">Tên Sản Phẩm</th>
     <th>Giá Gốc</th>
     <th>Giá<br />Niêm Yết</th>
-    <th colspan="2">Khuyến Mãi</th>
-    <th width="50px">&nbsp;</th>
     <th width="50px">&nbsp;</th>
   </tr>
   {foreach from=$Products_List item=product}
@@ -12,9 +10,6 @@
     <td><a href="javascript:openEditProductPopup({$product.products_id});">{$product.products_name}</a></td>
     <td align="right">100.000</td>
     <td align="right">{number_format number=$product.products_price}</td>
-    <td align="center"><input type="checkbox" disabled="disabled"{if $Saleoff_List[$product.products_id] == '1'} checked="checked"{/if}</td>
-    <td align="right">{number_format number=$product.special_price}</td>
-    <td><input type="button" value="Khuyến mãi" onclick="openSaleoffSettingPopup({$product.products_id});"></td>
     <td><input type="button" value="Xóa" onclick="deleteProduct({$product.products_id});"></td>
   </tr>
   {/foreach}
