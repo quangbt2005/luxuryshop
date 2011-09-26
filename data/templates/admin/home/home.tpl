@@ -6,23 +6,24 @@
       <h1 class="bkg_dashboard">Dashboard</h1>
     </div>
     <div class="content">
-      <div class="header1">Đơn hàng mới nhất</div>
+      <div class="header1">Thống kê</div>
       <div class="blu-container" style="padding: 10px;">
         <table width="100%" class="vlist" cellpadding="0" cellspacing="0">
           <tr>
-            <th>Khách hàng</th>
-            <th>Tổng tiền</th>
-            <th>Ngày đặt hàng</th>
-            <th>Tình trạng</th>
+            <th align="right" width="200">Tổng số danh mục&nbsp;&nbsp;</th>
+            <td>&nbsp;&nbsp;&nbsp;</td>
           </tr>
-          {foreach from=$Orders item=order}
-          <tr onMouseOver="this.style.backgroundColor='#71FFB8';" onMouseOut="this.style.backgroundColor='transparent';">
-            <td>{$order.customers_name}</td>
-            <td align="right">{number_format number=$order.value}&nbsp;VND</td>
-            <td align="right">{$order.date_purchased}</td>
-            <td>{$order.orders_status_name}</td>
+          <tr>
+            <th align="right">Tổng số sản phẩm&nbsp;&nbsp;</th>
+            <td>&nbsp;&nbsp;&nbsp;</td>
           </tr>
-          {/foreach}
+          <tr>
+            <th align="right">Tổng số pageview&nbsp;&nbsp;</th>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+          </tr>
+            <th align="right">Tổng số khách&nbsp;&nbsp;</th>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+          </tr>
         </table>
       </div>
     </div>
