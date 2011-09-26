@@ -343,7 +343,7 @@ table.register td{padding: 5px;text-align: left;}
 .success_field{ font-family: Arial, sans-serif; font-size: 11px; background-color: #99FF00; padding: 5px 0;}
 .inputRequirement{font:normal 10px/20px Arial; padding: 3px; color: red;}
 .orderEdit { font-family : Arial, sans-serif; font-size : 10px; color: #70d250; text-decoration: underline; }
-.bigtitle{font-family: Arial, sans-serif;font-size: 20px;font-weight: bold;color: #333399;}
+.bigtitle{font-family: Arial, sans-serif;font-size: 20px;font-weight: bold;}
 .tumlum1{font:normal 16px/28px Tahoma;color: #000000;}
 /* --------------------------------------------------------------------------------------------- */
 /* TABLE CHAT

@@ -136,7 +136,7 @@ function Find_Category_By_ID($cat_id)
 {
   $cat_id = P_SQL_Quote_NumberOnly($cat_id);
 
-  $SQL  = "SELECT c.categories_id,cd.categories_name,c.icon,c.parent_id FROM " . TBL_CAT . ' c';
+  $SQL  = "SELECT c.categories_id,cd.categories_name,c.icon,c.parent_id,c.sort_order FROM " . TBL_CAT . ' c';
   $SQL .= " INNER JOIN " . TBL_CAT_DES . ' cd ON(cd.categories_id=c.categories_id)';
   $SQL .= " WHERE c.categories_id=" . $cat_id;
   $SQL .= " ORDER BY sort_order ASC LIMIT 1";
