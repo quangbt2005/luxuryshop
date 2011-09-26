@@ -3,9 +3,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="robots" content="index, follow" />
-  <meta name="keywords" content="mỹ phẩm bà mẹ,mỹ phẩm trẻ em,dầu gội em bé,dầu gội cho bé,mỹ phẩm cho bé,dưỡng da cho bé,sữa tắm không cay mắt,dầu gội không cay mắt,sữa tắm cho bé,xà bông cho bé,mẹ & bé,me & be,mẹ và bé,trẻ sơ sinh,em bé,trẻ em,thoi trang,thời trang,lam dep,làm đẹp,shop online,quần áo,mũ nón,thun,jean,quần áo,áo khoác,giày dép,mũ,nón,đồ chơi,mỹ phẩm,my pham,chăm sóc da,cham soc da,dưỡng da,duong da,kem đánh răng,sữa tắm,dầu gội,bà mẹ,sơ sinh" />
-  <meta name="description" content="Chuyên kinh doanh các sản phẩm dành cho bà mẹ và trẻ em. Các sản phẩm chính gồm quần áo thời trang, vật dụng, trang sức, mỹ phẩm, sản phẩm dinh dưỡng, thực phẩm/dược phẩm chức năng, đồ chơi" />
-  <h1 style="POSITION: absolute;LEFT: -999em;">Shop các sản phẩm cao cấp dành cho Mẹ và Bé</h1>
+  <meta name="keywords" content="dong ho cao cap, but cao cap, mont blanc, rolex, patek philippe, vacheron constantin, chopard, jaeger lecoultre" />
+  <meta name="description" content="MUA - BÁN - TRAO ĐỔI - SỬA CHỮA CÁC SẢN PHẨM ĐỒNG HỒ, BÚT CAO CẤP CHÍNH HÃNG" />
+  <h1 style="POSITION: absolute;LEFT: -999em;">MUA - BÁN - TRAO ĐỔI - SỬA CHỮA CÁC SẢN PHẨM ĐỒNG HỒ, BÚT CAO CẤP CHÍNH HÃNG</h1>
   <link rel="StyleSheet" href="/style/common.css" type="text/css" />
   <!-- <link rel="StyleSheet" href="/style/startbox.css" type="text/css" /> -->
   <!-- <link rel="stylesheet" href="/style/jquery-lightbox/jquery.lightbox-0.5.css" media="screen" /> -->

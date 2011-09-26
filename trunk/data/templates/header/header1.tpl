@@ -20,7 +20,7 @@
     <marquee>{$_MARQUEE}</marquee>
   </div>
 </div>
-<div class="headerNavigation" style="{if $BROWSER_NAME=='ie'}margin-bottom: 0px;margin-top: 12px;{elseif $BROWSER_NAME=='opera'}margin-bottom: -10px;margin-top: -25px;{else}margin-top: 0px;{/if}">
+<div class="headerNavigation" style="margin: 0px">
     <ul class="headerNavigation">
       <li style="border-right: 1px solid #cccccc"><a href="/home">TRANG CHỦ</a></li>
       <li style="border-right: 1px solid #cccccc"><a href="#">DỊCH VỤ</a></li>

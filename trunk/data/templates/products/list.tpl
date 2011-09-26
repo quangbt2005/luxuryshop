@@ -31,5 +31,8 @@
   {$pager}<div class="clear"></div>
   <div class="t-right" style="width: 713px;"><span class="f10"><font color="white">Hiển thị {$product_count} sản phẩm từ {$product_from} đến {$product_to} trong tổng số {$total_products} sản phẩm</font></span></div>
   {else}
-  <h1>Không tìm thấy sản phẩm nào</h1>
+  <div style="width: 715px; margin-left: 1px;">
+  {TitleBox title=$cat_name}
+  <div style="padding: 10px;"><h3>Không tìm thấy sản phẩm nào</h3></div>
+  </div>
   {/if}
