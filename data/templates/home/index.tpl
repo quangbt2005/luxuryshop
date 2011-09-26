@@ -11,13 +11,13 @@
           </td>
           <td valign="top" style="padding: 0;">
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="padding-top: 5px;height:38px" valign="top" align="left"><a href="/sanpham/{$newProduct.products_id}/chitiet"><strong>{$newProduct.products_name}</strong></a></td></tr>
+              <tr><td style="padding-top: 5px;height:38px" valign="top" align="left"><a class="f12" href="/sanpham/{$newProduct.products_id}/chitiet"><strong>{$newProduct.products_name}</strong></a></td></tr>
               <tr><td style="padding: 5px 3px 5px 5px;height:130px;overflow: hidden" valign="top" align="left">{$newProduct.products_intro}</td></tr>
             </table>
           </td>
         </tr>
         <tr>
-          <td style="padding: 0 10px;width:120px;color: #00ff00;font-size: 18px" align="center"><strong>{number_format number=$newProduct.products_price}</strong></td>
+          <td style="padding: 0 10px;width:120px;color: #00ff00;font-size: 18px" valign="top" align="center"><strong>{number_format number=$newProduct.products_price}</strong></td>
           <td align="right" style="padding: 0 20px;"><a href="/sanpham/{$newProduct.products_id}/chitiet"><img src="/images/btn_detail.gif" border="0" alt="Chi tiết sản phẩm"></a></td>
         </tr>
       </table>
