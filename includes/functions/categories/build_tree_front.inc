@@ -42,23 +42,36 @@ function BuildCategoryTree()
   $no = 0;
   $cat_count = count($Tree) - 1;
 
+  $margin_div = "";
+  $margin_ul  = "";
+
   foreach($Tree as $cat){
     if($no == 0){
-      $margin_div = "margin-top: 10px;";
-      $margin_ul = "margin-bottom: 40px;";
+      $margin_div = "style=\"margin-top: 10px;\"";
+      $margin_ul = "style=\"margin-bottom: 40px;\"";
     } elseif($no == $cat_count){
       $margin_div = "";
-      $margin_ul = "margin-bottom: 200px;";
+      $margin_ul = "style=\"margin-bottom: 200px;\"";
+      // $margin_ul = "";
     } else {
       $margin_div = "";
-      $margin_ul = "margin-bottom: 40px;";
+      $margin_ul = "style=\"margin-bottom: 40px;\"";
     }
 
     if(isset($cat['childs'])){
-      $html .= sprintf("<div class=\"menuheaders\" style=\"%s\"><a href=\"/sanpham/danhsach/%s\">%s</a></div>\n<ul class=\"menucontents\" style=\"%s\">\n", $margin_div, $cat['categories_id'], $cat['categories_name'], $margin_ul);
+      $html .= sprintf("<div class=\"expandablelevel1\" %s><a href=\"/sanpham/danhsach/%s\">%s</a></div>\n<ul class=\"menucontentslevel1\" %s>\n", $margin_div, $cat['categories_id'], $cat['categories_name'], $margin_ul);
       $childs = $cat['childs'];
       foreach($childs as $child_cat){
-        $html .= sprintf("<li><a href=\"/sanpham/danhsach/%s\">%s</a></li>\n", $child_cat['categories_id'], $child_cat['categories_name']);
+        if(isset($child_cat['childs'])){
+          $html .= sprintf("<li><a class=\"expandablelevel2\" href=\"/sanpham/danhsach/%s\">%s</a>\n<ul class=\"menucontentslevel2\">", $child_cat['categories_id'], $child_cat['categories_name']);
+          $child_childs = $child_cat['childs'];
+          foreach($child_childs as $child_child){
+            $html .= sprintf("<li><a href=\"/sanpham/danhsach/%s\">%s</a></li>\n", $child_child['categories_id'], $child_child['categories_name']);
+          }
+          $html .= '</ul></li>';
+        } else {
+          $html .= sprintf("<li><a href=\"/sanpham/danhsach/%s\">%s</a></li>\n", $child_cat['categories_id'], $child_cat['categories_name']);
+        }
       }
       $html .= "</ul>";
     } else {

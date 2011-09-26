@@ -19,7 +19,7 @@
           </td>
         </tr>
         <tr>
-          <td style="padding: 0 10px;width:120px;color: #00ff00;" align="center"><strong>{number_format number=$product.products_price}</strong></td>
+          <td style="padding: 0 10px;width:120px;color: #00ff00;font-size: 18px" align="center"><strong>{number_format number=$product.products_price}</strong></td>
           <td align="right" style="padding: 0 20px;"><a href="/sanpham/{$product.products_id}/chitiet"><img src="/images/btn_detail.gif" border="0" alt="Chi tiết sản phẩm"></a></td>
         </tr>
       </table>
