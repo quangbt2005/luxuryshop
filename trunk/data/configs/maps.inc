@@ -11,6 +11,7 @@ $Routes = array(
       "/sanpham/:productid/chitiet"        => array('module'=>'products',  'page'=>'detail'),
       "/lienhe"                            => array('module'=>'helper',    'page'=>'contact'),
       "/lienhe/thanhcong"                  => array('module'=>'helper',    'page'=>'contact_success'),
+      "/dichvu"                            => array('module'=>'helper',    'page'=>'service'),
       "/timkiem"                           => array('module'=>'search',    'page'=>'search'),
       "/timkiem/:key"                      => array('module'=>'search',    'page'=>'search'),
       "/timkiem/:key/:page"                => array('module'=>'search',    'page'=>'search'),
@@ -75,6 +76,7 @@ $Module_Map = array(
           "buyinghelper"    => MODULES_PATH . "helper/buyinghelper.inc",
           "checkouthelper"  => MODULES_PATH . "helper/checkouthelper.inc",
           "contact_success" => MODULES_PATH . "helper/contact_success.inc",
+          "service"         => MODULES_PATH . "helper/service.inc",
       ),
       "errors"      => array(
           "noproduct"   => MODULES_PATH . "errors/noproduct.inc",

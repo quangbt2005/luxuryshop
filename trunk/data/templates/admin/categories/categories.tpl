@@ -148,26 +148,28 @@ function addTreeNewCategory(category_id, category_name, parent_id)
         isFolder: true
       });
   } else {
-    if($("#tree").dynatree("getActiveNode") != null){
-      activenode = $("#tree").dynatree("getActiveNode").addChild({
+    $("#tree").dynatree("getTree").selectKey(parent_id).addChild({
         title: category_name,
         key: category_id,
         isFolder: true
-      });
-    } else {
-      activenode = $("#tree").dynatree("getRoot").childList[0].addChild({
-        title: category_name,
-        key: category_id,
-        isFolder: true
-      });
-    }
+    });
   }
 }
-function editTreeCategory(category_name)
+function editTreeCategory(category_name, old_parent_id, new_parent_id)
 {
   var node = $("#tree").dynatree("getActiveNode");
   node.data.title = category_name;
-  node.render();
+  if(old_parent_id != new_parent_id){
+    node_id = node.data.key;
+    new_parent = $("#tree").dynatree("getTree").selectKey(new_parent_id).addChild({
+        title: category_name,
+        key: node_id,
+        isFolder: true
+    });
+    node.remove();
+  } else {
+    node.render();
+  }
 }
 function openAddCategoryPopup(){
   var url = '/admin/categories/add/';

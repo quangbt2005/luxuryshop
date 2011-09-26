@@ -18,11 +18,8 @@
           <td align="left" style="padding-left: 5px">{$html_select_categories}</td>
         </tr>
         <tr>
-          <th align="right" style="padding-right: 5px">Biểu tượng</th>
-          <td valign="middle" align="left" style="padding-left: 5px;height:50px;">
-          	<img id="catIcon" src="/images/transparent.png" width="30" height="25" border="0" style="padding:0;margin:0;float: left">&nbsp;&nbsp;
-          	<input type="button" onclick="openIconBoardPopup()" value="Chọn biểu tượng">
-          	<input type="hidden" name="txtCategoryImage" id="txtCategoryImage">
+          <th align="right" style="padding-right: 5px">Thứ tự hiển thị</th>
+          <td align="left" style="padding-left: 5px"><input name="txtSortOrder" type="text" class="w240" value="{if $smarty.post.txtSortOrder != ''}{$smarty.post.txtSortOrder}{else}1000{/if}"></td>
           </td>
         </tr>
       </table><br />
@@ -37,26 +34,4 @@
 window.opener.addTreeNewCategory({$new_category_id},'{$new_category_name}',{$parent_id});
 alert('Đã thêm danh mục thành công');
 {/if}
-{literal}
-function openIconBoardPopup(){
-	var popupWidth  = 640;
-	var popupHeight = 400;
-
-	var topPos = 200;
-	var leftPos = 380;
-
-	var url = '/admin/categories/iconboard';
-	var popup = window.open(url, 'Icon_board',"resizable=no,menubar=no,toolbar=no,location=no,width=" + popupWidth + ",height=" + popupHeight + ",left="+leftPos+",top="+topPos);
-}
-function setIcon(iconName){
-	var txt = document.getElementById('txtCategoryImage');
-	var img = document.getElementById('catIcon');
-	if(txt != null){
-		txt.value = iconName;
-	}
-	if(img != null){
-		img.src = '/images/cat/' + iconName;
-	}
-}
-{/literal}
 </script>

@@ -22,15 +22,14 @@ if(!$category)
     $category_parent = $_POST['drpProductCategory'];
     $category_name   = $_POST['txtCategoryName'];
     $parent_id       = $_POST['drpProductCategory'];
-    $category_icon   = $_POST['txtCategoryImage'];
+    $category_sortorder   = $_POST['txtSortOrder'];
 
     if(empty($category_name)) $errors[] = 'Vui lòng nhập tên danh mục';
 
     if(count($errors) <= 0){
       DB_Update('categories',array('categories_id' => $category_id),array(
         'parent_id'  => $category_parent,
-        'sort_order' => '0',
-        'icon'       => $category_icon,
+        'sort_order' => $category_sortorder,
         'date_added' => date('Y-m-d H:i:s'),
       ));
       DB_Update('categories_description',array('categories_id' => $category_id),array(
@@ -39,6 +38,8 @@ if(!$category)
 
       $_SESSION['flash']['edit_category_ok']   = '1';
       $_SESSION['flash']['new_category_name']  = $category_name;
+      $_SESSION['flash']['new_parent_id']      = $parent_id;
+      $_SESSION['flash']['old_parent_id']      = $category['parent_id'];
       header("Location: /admin/categories/edit/" . $category_id);
       exit;
     }
@@ -47,11 +48,15 @@ if(!$category)
     if($_SESSION['flash']['edit_category_ok'] == '1'){
       $smarty->assign('edit_category_ok', '1');
       $smarty->assign('new_category_name', $_SESSION['flash']['new_category_name']);
+      $smarty->assign('new_parent_id', $_SESSION['flash']['new_parent_id']);
+      $smarty->assign('old_parent_id', $_SESSION['flash']['old_parent_id']);
       unset($_SESSION['flash']['edit_category_ok']);
       unset($_SESSION['flash']['new_category_name']);
+      unset($_SESSION['flash']['new_parent_id']);
+      unset($_SESSION['flash']['old_parent_id']);
     }
     $smarty->assign('category_name', $category['categories_name']);
-    $smarty->assign('category_icon', $category['icon']);
+    $smarty->assign('category_sortorder', $category['sort_order']);
   }
 }
 $html_select_categories = create_html_select_categories($parent_id);

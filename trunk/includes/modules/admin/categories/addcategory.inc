@@ -13,19 +13,18 @@ $category_id = $Request['parameters'][':parentid'];
 $errors = array();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  $category_id     = $_POST['drpProductCategory'];
+  $category_id          = $_POST['drpProductCategory'];
 
-  $category_parent = $_POST['drpProductCategory'];
-  $category_name   = $_POST['txtCategoryName'];
-  $category_icon   = $_POST['txtCategoryImage'];
+  $category_parent      = $_POST['drpProductCategory'];
+  $category_name        = $_POST['txtCategoryName'];
+  $category_sortorder   = $_POST['txtSortOrder'];
 
   if(empty($category_name)) $errors[] = 'Vui lòng nhập tên danh mục';
 
   if(count($errors) <= 0){
     $id = DB_Insert('categories',array(
       'parent_id'  => $category_parent,
-      'sort_order' => '0',
-      'icon'       => $category_icon,
+      'sort_order' => $category_sortorder,
       'date_added' => date('Y-m-d H:i:s'),
     ));
     if(!empty($id)){
