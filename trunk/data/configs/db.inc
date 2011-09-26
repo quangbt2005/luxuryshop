@@ -40,7 +40,7 @@ define( 'TBL_ADMIN', 'administrators' );
 // necessary constants for dnp
 //------------------------------------------------------------------------------------------------//
 define( 'DB_Host', 'localhost' );
-define( 'DB_Name', 'quangbt200_luxury' );
-define( 'DB_User', 'quangbt200_admin' );
-define( 'DB_Pass', 'mi@1lauQua' );
+define( 'DB_Name', 'belamdep_luxury' );
+define( 'DB_User', 'belamdep_quangbt' );
+define( 'DB_Pass', 'mi@1lauqua' );
 ?>

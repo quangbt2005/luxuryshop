@@ -178,7 +178,7 @@ function List_All_Category()
   $SQL  = "SELECT c.categories_id,cd.categories_name,c.icon,c.parent_id FROM " . TBL_CAT . ' c';
   $SQL .= " INNER JOIN " . TBL_CAT_DES . ' cd USING(categories_id)';
   $SQL .= " ORDER BY sort_order ASC";
-//e($SQL);
+  // pd($SQL);
   return P_MySQL_Real_SELECT_GetArrayIndex( $SQL );
 }
 // ---------------------------------------------------------------------------------------------- //

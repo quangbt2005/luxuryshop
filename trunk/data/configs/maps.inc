@@ -6,42 +6,14 @@
 // ROUTE
 // ---------------------------------------------------------------------------------------------- //
 $Routes = array(
-      "/taikhoan"                          => array('module'=>'account',   'page'=>'manage'),
-      "/taikhoan/thongtin"                 => array('module'=>'account',   'page'=>'edit_info'),
-      "/taikhoan/matkhau"                  => array('module'=>'account',   'page'=>'edit_pass'),
-      "/taikhoan/dangky"                   => array('module'=>'account',   'page'=>'register'),
-      "/taikhoan/dangky/thanhcong"         => array('module'=>'account',   'page'=>'register_success'),
-      "/taikhoan/donhang"                  => array('module'=>'account',   'page'=>'last_ordered'),
-      "/dangnhap"                          => array('module'=>'logon',     'page'=>'login'),
-      "/dangxuat"                          => array('module'=>'logon',     'page'=>'logout'),
-      "/quenmatkhau"                       => array('module'=>'logon',     'page'=>'resetpass'),
-      "/sanpham/giamgia/danhsach"          => array('module'=>'products',  'page'=>'saleoff_list'),
-      "/sanpham/giamgia/danhsach/:page"    => array('module'=>'products',  'page'=>'saleoff_list'),
       "/sanpham/danhsach/:catid/:page"     => array('module'=>'products',  'page'=>'list'),
       "/sanpham/danhsach/:catid"           => array('module'=>'products',  'page'=>'list'),
       "/sanpham/:productid/chitiet"        => array('module'=>'products',  'page'=>'detail'),
-      "/sanpham/giamgia/ajax"              => array('module'=>'products',  'page'=>'random1saleoff'),
-      "/sanpham/:id/order"                 => array('module'=>'cart',      'page'=>'order'),
-      "/giohang/xem"                       => array('module'=>'cart',      'page'=>'view'),
-      "/giohang/capnhat"                   => array('module'=>'cart',      'page'=>'update'),
-      "/thanhtoan"                         => array('module'=>'cart',      'page'=>'checkout1'),
-      "/thanhtoan/xacnhan"                 => array('module'=>'cart',      'page'=>'checkout2'),
-      "/thanhtoan/hoantat/:hash"           => array('module'=>'cart',      'page'=>'checkout3'),
-      "/thanhtoan/:paymntgw/hoantat/:hash" => array('module'=>'cart',      'page'=>'checkout4'),
       "/lienhe"                            => array('module'=>'helper',    'page'=>'contact'),
       "/lienhe/thanhcong"                  => array('module'=>'helper',    'page'=>'contact_success'),
-      "/huongdanmuahang"                   => array('module'=>'helper',    'page'=>'buyinghelper'),
-      "/huongdanthanhtoan"                 => array('module'=>'helper',    'page'=>'checkouthelper'),
       "/timkiem"                           => array('module'=>'search',    'page'=>'search'),
       "/timkiem/:key"                      => array('module'=>'search',    'page'=>'search'),
       "/timkiem/:key/:page"                => array('module'=>'search',    'page'=>'search'),
-      "/tintuc"                            => array('module'=>'news',      'page'=>'index'),
-      "/tintuc/danhmuc/:catid"             => array('module'=>'news',      'page'=>'news_in_cat'),
-      "/tintuc/:id/chitiet"                => array('module'=>'news',      'page'=>'news_detail'),
-      "/donhang/:hash"                     => array('module'=>'orders',    'page'=>'view'),
-      "/chat"                              => array('module'=>'chat',      'page'=>'list'),
-      "/chat/:page/list"                   => array('module'=>'chat',      'page'=>'list'),
-      "/chat/post/:page"                   => array('module'=>'chat',      'page'=>'post'),
       // ADMIN ---------------------------------------------------------------------------------- //
       "/admin/login"                         => array('module'=>'admin',     'page'=>'login'),
       "/admin/home"                          => array('module'=>'admin',     'page'=>'home'),
@@ -57,19 +29,9 @@ $Routes = array(
       "/admin/products/delete/:productid/:catid" => array('module'=>'admin', 'page'=>'deleteproduct'),
       "/admin/products/edit/:productid"      => array('module'=>'adminpopup','page'=>'editproduct'),
       "/admin/products/saleoff/:productid"   => array('module'=>'adminpopup','page'=>'saleoffsetting'),
-      "/admin/orders/list"                   => array('module'=>'admin',     'page'=>'orderslist'),
-      "/admin/orders/:orderid/detail"        => array('module'=>'adminpopup','page'=>'orderdetail'),
-      "/admin/orders/:orderid/delete"        => array('module'=>'admin',     'page'=>'ordersdelete'),
-      "/admin/orders/getlist"                => array('module'=>'admin',     'page'=>'getorderslist'),
       "/admin/shop/config"                   => array('module'=>'admin',     'page'=>'shopconfig'),
       "/admin/:filename/uploadproductimage"  => array('module'=>'admin',     'page'=>'uploadproductimage'),
-      "/admin/testupload"                    => array('module'=>'test',      'page'=>'testupload'),
       "/admin/specialcat"                    => array('module'=>'admin',     'page'=>'specialcat'),
-      "/admin/chat"                          => array('module'=>'admin',     'page'=>'chatlist'),
-      "/admin/chat/:chatid/delete"           => array('module'=>'admin',     'page'=>'chatdelete'),
-      "/admin/chat/:chatid/nodisplay"        => array('module'=>'admin',     'page'=>'chatnodisplay'),
-      "/admin/chat/:chatid/display"          => array('module'=>'admin',     'page'=>'chatdisplay'),
-      "/admin/chat/getlist"                  => array('module'=>'admin',     'page'=>'chatgetlist'),
 );
 // ---------------------------------------------------------------------------------------------- //
 // MODULES MAP
@@ -293,9 +255,9 @@ $Footer_Map = array(
 // TITLE
 // ---------------------------------------------------------------------------------------------- //
 $Title_Map = array(
-      "default"     => "MEOKITTY",
-      "admin"       => "MEOKITTY - Quan Tri",
-      "adminpopup"  => "MEOKITTY - Quan Tri",
-      "test"        => "MEOKITTY - Test",
+      "default"     => "LUXURY SHOP",
+      "admin"       => "LUXURY SHOP - Quan Tri",
+      "adminpopup"  => "LUXURY SHOP - Quan Tri",
+      "test"        => "LUXURY SHOP - Test",
 );
 ?>
