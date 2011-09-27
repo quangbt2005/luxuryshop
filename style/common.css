@@ -168,6 +168,10 @@ div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
   text-align: left;
   height: 42px;
   padding-top: 5px;
+  width:225px;
+}
+.product .image_and_name_and_intro .name_and_intro .product_intro{
+  width:222px;
 }
 .product .price_and_button{
   width:355px;
