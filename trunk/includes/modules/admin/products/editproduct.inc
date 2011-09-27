@@ -25,7 +25,7 @@ if(!empty($product)){
     $product_description = $_POST['txtProductDescription'];
     //$product_quantity    = $_POST['txtProductQuantity'];
     $product_image       = $_POST['txtProductImage'];
-    $product_sold        = $_POST['txtSoldQuantity'];
+    // $product_sold        = $_POST['txtSoldQuantity'];
 
     // ------------------------------------------------------------------------------------------ //
     if(get_magic_quotes_gpc() == 1) $product_description = stripslashes($product_description);

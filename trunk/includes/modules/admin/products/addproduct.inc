@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   $product_name        = $_POST['txtProductName'];
   $product_intro       = $_POST['txtProductIntro'];
   $product_description = $_POST['txtProductDescription'];
-  // $product_quantity = $_POST['txtProductQuantity'];
+  // $product_quantity    = $_POST['txtProductQuantity'];
   $product_image       = $_POST['txtProductImage'];
 
   if(get_magic_quotes_gpc() == 1) $product_description = stripslashes($product_description);

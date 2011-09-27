@@ -4,25 +4,17 @@
     {foreach from=$Product_List item=product}
     <div class="product">
       {if $product.empty != 'true'}
-      <table width="356" cellpadding="0" cellspacing="0" boder="0">
-        <tr>
-          <td style="padding: 10px 0 10px 10px;width:120px">
-            <table width="100%" cellpadding="0" cellspacing="0" boder="0">
-              <tr><td align="center"><a title="{$product.products_name}" href="/sanpham/{$product.products_id}/chitiet"><img src="/product_thumb.php?f={$product.products_image}&w=auto&h=180&ma=120&cx=120&cy=180" border="0" alt="{$product.products_name}"></a></td></tr>
-            </table>
-          </td>
-          <td valign="top" style="padding: 0;">
-            <table width="100%" cellpadding="0" cellspacing="0" boder="0">
-              <tr><td style="padding-top: 5px;height:38px" valign="top" align="left"><a href="/sanpham/{$product.products_id}/chitiet"><strong>{$product.products_name}</strong></a></td></tr>
-              <tr><td style="padding: 5px 3px 5px 5px;height:130px;overflow: hidden" valign="top" align="left">{$product.products_intro}</td></tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 0 10px;width:120px;color: #00ff00;font-size: 18px" align="center"><strong>{number_format number=$product.products_price}</strong></td>
-          <td align="right" style="padding: 0 20px;"><a href="/sanpham/{$product.products_id}/chitiet"><img src="/images/btn_detail.gif" border="0" alt="Chi tiết sản phẩm"></a></td>
-        </tr>
-      </table>
+      <div style="background-color: black;" class="image_and_name_and_intro">
+        <div class="image" style="background-color: black;"><a title="{$product.products_name}" href="/sanpham/{$product.products_id}/chitiet"><img src="/product_thumb.php?f={$product.products_image}&w=auto&h=180&ma=120&cx=120&cy=180" border="0" alt="{$product.products_name}"></a></div>
+        <div class="name_and_intro" style="background-color: black;">
+          <div class="product_name">{$product.products_name}</div>
+          <div class="product_intro" style="background-color: black">{$product.products_intro}</div>
+        </div>
+      </div>
+      <div class="price_and_button">
+        <div class="product_price"><strong>{number_format number=$product.products_price}</strong></div>
+        <div class="product_detail_button"><a href="/sanpham/{$product.products_id}/chitiet"><img src="/images/btn_detail.gif" border="0" alt="Chi tiết sản phẩm"></a></div>
+      </div>
       {/if}
     </div>
     {/foreach}
