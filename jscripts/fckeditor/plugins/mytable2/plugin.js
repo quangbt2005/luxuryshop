@@ -13,7 +13,7 @@
       editor.addCommand(b,a);
       editor.ui.addButton("mytable2",{
         label:'Thêm bảng chi tiết sản phẩm',
-        icon:this.path+"addTag.gif",
+        icon:this.path+"mytable.gif",
         command:b
       });
     }
