@@ -1,26 +1,18 @@
   <div class="wrapper" style="width: 715px; margin-left: 1px;"><!-- New product -->
     {TitleBox title="&nbsp;Sản phẩm mới nhất"}
-    {foreach from=$NewProducts item=newProduct}
+    {foreach from=$NewProducts item=product}
     <div class="product">
-      <table width="356" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td style="padding: 10px 0 10px 10px;width:120px">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td align="center"><a title="{$newProduct.products_name}" href="/sanpham/{$newProduct.products_id}/chitiet"><img src="/product_thumb.php?f={$newProduct.products_image}&w=auto&h=180&ma=120&cx=120&cy=180" border="0" alt="{$newProduct.products_name}"></a></td></tr>
-            </table>
-          </td>
-          <td valign="top" style="padding: 0;">
-            <table width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="padding-top: 5px;height:38px" valign="top" align="left"><a class="f12" href="/sanpham/{$newProduct.products_id}/chitiet"><strong>{$newProduct.products_name}</strong></a></td></tr>
-              <tr><td style="padding: 5px 3px 5px 5px;height:130px;overflow: hidden" valign="top" align="left">{$newProduct.products_intro}</td></tr>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 0 10px;width:120px;color: #00ff00;font-size: 18px" valign="top" align="center"><strong>{number_format number=$newProduct.products_price}</strong></td>
-          <td align="right" style="padding: 0 20px;"><a href="/sanpham/{$newProduct.products_id}/chitiet"><img src="/images/btn_detail.gif" border="0" alt="Chi tiết sản phẩm"></a></td>
-        </tr>
-      </table>
+      <div style="background-color: black;" class="image_and_name_and_intro">
+        <div class="image" style="background-color: black;"><a title="{$product.products_name}" href="/sanpham/{$product.products_id}/chitiet"><img src="/product_thumb.php?f={$product.products_image}&w=auto&h=180&ma=120&cx=120&cy=180" border="0" alt="{$product.products_name}"></a></div>
+        <div class="name_and_intro" style="background-color: black;">
+          <div class="product_name">{$product.products_name}</div>
+          <div class="product_intro" style="background-color: black">{$product.products_intro}</div>
+        </div>
+      </div>
+      <div class="price_and_button">
+        <div class="product_price"><strong>{number_format number=$product.products_price}</strong></div>
+        <div class="product_detail_button"><a href="/sanpham/{$product.products_id}/chitiet"><img src="/images/btn_detail.gif" border="0" alt="Chi tiết sản phẩm"></a></div>
+      </div>
     </div>
     {/foreach}
   </div>

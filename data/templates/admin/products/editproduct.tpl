@@ -38,16 +38,6 @@ $(document).ready(function() {
           <th align="right" style="padding-right: 5px">Giá Sản Phẩm</th>
           <td align="left" style="padding-left: 5px"><input name="txtProductPrice" type="text" class="w100 t-right" value="{$txtProductPrice}">&nbsp;VND</td>
         </tr>
-        {if $txtProductSPPrice != ''}
-        <tr>
-          <th align="right" style="padding-right: 5px">Giá Khuyến Mãi</th>
-          <td align="left" style="padding-left: 5px"><span class="fore-red"><strong>{number_format number=$txtProductSPPrice}</strong></span>&nbsp;VND</td>
-        </tr>
-        {/if}
-        <tr>
-          <th align="right" style="padding-right: 5px">Số lượng sản phẩm đã bán</th>
-          <td align="left" style="padding-left: 5px"><input name="txtSoldQuantity" type="text" class="w100 t-right" value="{$txtSoldQuantity}">&nbsp;(10 sản phẩm có số lượng bán lớn nhất sẽ hiển thị trong mục <strong>BÁN CHẠY NHẤT</strong>)</td>
-        </tr>
         <tr>
           <th align="right" style="padding-right: 5px">Hình Sản Phẩm</th>
           <td align="left">
@@ -99,7 +89,7 @@ function createUploader(){
         $('#imgProductImg').attr("src","/product_thumb.php?f=" + fileName + "&w=auto&h=80&ma=80&cx=84&cy=84");
         $('#txtProductImage').val(fileName);
 {/literal}
-        $('#imgURL').attr("innerHTML","{$PRODUCTS_IMAGES}" + fileName);
+        // $('#imgURL').attr("innerHTML","{$PRODUCTS_IMAGES}" + fileName);
 {literal}
         insertHTMLImg(fileName);
       }

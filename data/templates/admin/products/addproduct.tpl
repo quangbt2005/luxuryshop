@@ -90,7 +90,7 @@ function createUploader(){
         $('#imgProductImg').attr("src","/product_thumb.php?f=" + fileName + "&w=auto&h=80&ma=80&cx=84&cy=84");
         $('#txtProductImage').val(fileName);
 {/literal}
-        $('#imgURL').attr("innerHTML","{$PRODUCTS_IMAGES}" + fileName);
+        // $('#imgURL').attr("innerHTML","{$PRODUCTS_IMAGES}" + fileName);
 {literal}
         insertHTMLImg(fileName);
       }

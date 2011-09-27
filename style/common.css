@@ -138,6 +138,53 @@ div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
   margin: 1px 0 0 1px;
   /*font:bold 11px/28px Tahoma;*/
 }
+.product .image_and_name_and_intro,
+.product .image_and_name_and_intro .image,
+.product .image_and_name_and_intro .name_and_intro,
+.product .image_and_name_and_intro .name_and_intro .product_name,
+.product .image_and_name_and_intro .name_and_intro .product_intro,
+.product .price_and_button,
+.product .price_and_button .product_price,
+.product .price_and_button .product_detail_button
+{
+  float: left;
+}
+.product .image_and_name_and_intro{
+  width:355px;
+  height:204px;
+}
+.product .image_and_name_and_intro .image{
+  width:130px;
+  height:204px;
+  padding: 5px 0;
+}
+.product .image_and_name_and_intro .name_and_intro{
+  width:225px;
+  height:214px;
+}
+.product .image_and_name_and_intro .name_and_intro .product_name{
+  font:bold 15px/18px Arial;
+  color:#ff0000;
+  text-align: left;
+  height: 42px;
+  padding-top: 5px;
+}
+.product .price_and_button{
+  width:355px;
+  height:45px;
+}
+.product .price_and_button .product_price{
+  width:130px;
+  font:bold 15px/18px Arial;
+  color:#00ff00;
+  text-align: center;
+}
+.product .price_and_button .product_detail_button{
+  width:205px;
+  text-align: right;
+  padding: 0;
+  padding-right: 10px;
+}
 div.titleheader{width: 100%;padding: 10px 5px;margin: 0;background-color: #2a3e4f;}
 .product a{ text-decoration:none; color:#ff0000; }
 
@@ -497,6 +544,7 @@ table.product_intro{}
   color: #a8dcdf;
   font: normal 11px/18px Arial;
   vertical-align: top;
+  text-align: left;
 }
 .product_intro th{
   font-weight: bold;
@@ -508,6 +556,7 @@ table.product_description{}
   font: normal 14px/28px Arial;
   vertical-align: top;
   height: 30px;
+  text-align: left;
 }
 .product_description th{
   font-weight: bold;
