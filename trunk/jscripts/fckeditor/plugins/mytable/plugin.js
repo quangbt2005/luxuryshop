@@ -2,7 +2,7 @@
   //Section 1 : Code to execute when the toolbar button is pressed
   var a= {
     exec:function(editor){
-      editor.insertHtml('<table width="200" class="product_intro" cellpadding="0" cellspacing="0"><tr><th align="left"></th><td></td></tr><tr><th align="left"></th><td></td></tr><tr><th align="left"></th><td></td></tr><tr><th align="left"></th><td></td></tr><tr><th align="left"></th><td></td></tr></table>');
+      editor.insertHtml('<table width="220" class="product_intro" cellpadding="0" cellspacing="0" style="color:#A8DCDF;font: bold 11px/18px Tahoma;"><tr><th align="left">Hãng sản xuất</th><td></td></tr><tr><th align="left">Reference</th><td></td></tr><tr><th align="left">Đường kính</th><td></td></tr><tr><th align="left">Độ dày</th><td></td></tr><tr><th align="left">Chất liệu</th><td></td></tr></table>');
     }
   },
 
