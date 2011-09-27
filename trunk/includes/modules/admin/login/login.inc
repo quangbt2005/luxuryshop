@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
       if($check_pass){
         $_SESSION['admin']['id']   = $user['id'];
         $_SESSION['admin']['name'] = $user['user_name'];
-// pd($_SESSION);
+
         header('Location: /admin/categories');
         exit;
       } else {
