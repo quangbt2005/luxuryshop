@@ -12,7 +12,7 @@
     init:function(editor){
       editor.addCommand(b,a);
       editor.ui.addButton("mytable2",{
-        label:'Thêm bảng chi tiết sản phẩm',
+        label:'Thêm bảng chi tiết sản phẩm Đồng Hồ',
         icon:this.path+"mytable.gif",
         command:b
       });
