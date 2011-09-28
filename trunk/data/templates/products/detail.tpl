@@ -3,7 +3,7 @@
     <tr>
       <td style="padding: 10px 0 10px 10px;width:120px">
         <table cellpadding="0" cellspacing="0" border="0">
-          <tr><td align="left"><img src="/product_thumb.php?f={$product.products_image}&w=auto&h=180&ma=120&cx=120&cy=180" width="120" border="0" vspace="0" hspace="0" style="padding:0;margin:0;float:left;" alt="{$product.products_name}"></td></tr>
+          <tr><td align="left"><img src="/product_thumb.php?f={$product.products_image}&w=auto&h=400&ma=280&cx=290&cy=410" width="290" border="0" vspace="0" hspace="0" style="padding:0;margin:0;float:left;" alt="{$product.products_name}"></td></tr>
         </table>
       </td>
       <td valign="top" style="padding: 0;width: 450px;" align="left">

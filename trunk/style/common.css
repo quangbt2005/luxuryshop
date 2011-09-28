@@ -1,4 +1,4 @@
-body{font-family: Tahoma;background-color: #161f29;color: #A7D8FF}
+body{font-family: Tahoma;background-color: #fdc370;color: #A7D8FF}
 div{margin: 0px auto;text-align: center;padding: auto;background-color: transparent;}
 img{padding:0;margin:0}
 /*table {font:bold 11px/14px Tahoma;}*/
@@ -60,18 +60,31 @@ ul.categories li a:hover{color: red;}
   width: 960px;
   /*background:url("/images/top-m.gif") repeat-x scroll right top transparent;*/
 }
-#allleft{float: left;width: 241px;margin: 5px 1px 5px 0;background-color: #2a3e4f;height:1292px;}
-#allcenter{float: left;width:717px;background-color: black;margin: 5px 0 5px 1px;}
+#allleft{
+  float: left;
+  width: 241px;
+  margin: 5px 1px 5px 0;
+  background-color: #2a3e4f;
+  min-height:1292px;
+  height:auto !important;
+  height:1292px;
+}
+#allcenter{
+  float: left;
+  width:717px;
+  background-color: black;
+  margin: 5px 0 5px 1px;
+}
 #allfooter{clear: both;width:960px;}
 #footer, #footer td a, #footer td, .copyright{
   font: normal 13px/20px Tahoma;
   color: #ffffff;
 }
 #footer{
-  width: 100%;
+  width: 950px;
   background: url(/images/Footer_bkg.png) no-repeat;
-  height: 70px;
-  padding: 14px 0 0 10px;
+  height: 57px;
+  padding: 13px 0 0 10px;
   text-align: left;
 }
 #marquee_wrapper{position: relative;left: 0px;top: 3px;}
@@ -166,9 +179,11 @@ div.container{padding: 0px;background-color: #f8ffd9;border: 1px solid #E9EE88;}
   font:bold 15px/18px Arial;
   color:#ff0000;
   text-align: left;
-  height: 42px;
   padding-top: 5px;
   width:225px;
+  min-height:42px;
+  height:auto !important;
+  height: 42px;
 }
 .product .image_and_name_and_intro .name_and_intro .product_intro{
   width:222px;
